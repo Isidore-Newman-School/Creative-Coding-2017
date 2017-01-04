@@ -22,10 +22,10 @@ Creative Coding employs computer programming as a means of creative expression. 
 10% - Class Participation  
 10% - Homework  
 15% - Quizzes  
-20% - Project 1 - Useless Web  
+15% - Project 1 - Useless Web  
 15% - Project 2 - Data Visualization  
 15% - Project 3 - Virtual Reality  
-10% - Portfolio
+15% - Portfolio
 
 ***
 
