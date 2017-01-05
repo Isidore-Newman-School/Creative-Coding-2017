@@ -18,14 +18,14 @@ Creative Coding employs computer programming as a means of creative expression. 
 ***
 
 ### Grade Breakdown
-5% - TED Tech Talks  
+10% - TED Tech Talks  
 10% - Class Participation  
 10% - Homework  
 15% - Quizzes  
 15% - Project 1 - Useless Web  
 15% - Project 2 - Data Visualization  
 15% - Project 3 - Virtual Reality  
-15% - Portfolio
+10% - Portfolio
 
 ***
 
