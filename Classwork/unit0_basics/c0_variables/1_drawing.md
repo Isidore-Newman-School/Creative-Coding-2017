@@ -34,6 +34,8 @@ Show your snowman to Ms. deBB to move on to the next step.
 3. Create a snowman using the ellipse() function.
 </pre>
 
+    ![alt text](snowman0.png)
+
 ## Variables
 
 A **variable** in computer science is used to store a value. They have a descriptive name, known as the **identifier**, and they have a **data type**. There are six different types of variables in JavaScript:
