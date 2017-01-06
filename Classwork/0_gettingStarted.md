@@ -58,7 +58,7 @@ If everything worked properly, you should see a blank page titled, p5 template.
 
 
 
-<pre>
+<pre style="background-color:blue">
 <h3><b>Exercise:</b></h3>
 Try experimenting with the background() and createCanvas() functions.
 What happens when you change the values in each?
