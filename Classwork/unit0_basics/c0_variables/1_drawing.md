@@ -1,17 +1,17 @@
 # 1. Variables and Drawing
 
 Topics
-* [Shapes and Drawing](#shapes-and-drawing)
-* [Variables](#variables)
-* [Arithmetic with Variables](#arithmetic-with-variables)
+* [I. Shapes and Drawing](#shapes-and-drawing)
+* [II. Variables](#variables)
+* [III. Arithmetic with Variables](#arithmetic-with-variables)
 
 Exercises
 * [Exercise 0. Snowman](#ex0)
-* [Chapter Review](#chapter-review)
-
+* [Exercise 1. Variable Snowman](#ex1)
+* [Extra Challenge]()
 ---
 
-## Shapes and Drawing
+## I. Shapes and Drawing
 There are many different functions (we'll define functions later) in the p5 library for drawing shapes. Check them out in the [**p5.js reference**](http://p5js.org/reference/). Let's use the ellipse() function to draw a circle on the screen. In your sketch.js file, type:
 
 ```javascript
@@ -24,6 +24,8 @@ function draw() {
   ellipse(300, 200, 50, 50);
 }
 ```
+---
+
 <a name="ex0"></a>
 <pre>
 <b>Exercise 0:</b>
@@ -36,7 +38,7 @@ Show your snowman to Ms. deBB to move on to the next step.
 
   ![alt text](images/snow0.png)
 
-## Variables
+## II. Variables
 
 A **variable** in computer science is used to store a value. They have a descriptive name, known as the **identifier**, and they have a **data type**. There are six different types of variables in JavaScript:
   1. numbers
@@ -64,7 +66,7 @@ var isHappy = true;               // boolean
 Why use variables? To make code more readable and portable (easy to change).
 
 
-## Arithmetic with variables
+## III. Arithmetic with variables
 
 We'll use **console.log()** to print values to the console so that we can test arithmetic on variables. Try putting the following code at the top of your sketch.js file:
 
@@ -80,15 +82,16 @@ console.log(y / x);     // 2
 
 <a name="ex1"></a>
 <pre>
-<b>Exercise 0:</b>
+<b>Exercise 1:</b>
 Show your snowman to Ms. deBB to move on to the next chapter.
 
-Modify the **sketch.js** file to create a snowman using 3 ellipses, *only this time using variables.*
+Modify the **sketch.js** file to create a snowman using 3 ellipses, <em>only this time using variables.</em>
 Use variables correctly so that the snowman:
 
 1. moves as a unit when the variables "x" and "y" are changed
 2. scales appropriately when the "multiplier" variable is adjusted
 </pre>
+
 ```javascript
 /**
 * When these values are modified,
