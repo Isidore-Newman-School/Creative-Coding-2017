@@ -1,9 +1,9 @@
 # 1. Variables and Drawing
 
 Topics
-* [I. Shapes and Drawing](#shapes-and-drawing)
-* [II. Variables](#variables)
-* [III. Arithmetic with Variables](#arithmetic-with-variables)
+* [I. Shapes and Drawing](#i-shapes-and-drawing)
+* [II. Variables](#ii-variables)
+* [III. Arithmetic with Variables](#iii-arithmetic-with-variables)
 
 Exercises
 * [Exercise 0. Snowman](#ex0)

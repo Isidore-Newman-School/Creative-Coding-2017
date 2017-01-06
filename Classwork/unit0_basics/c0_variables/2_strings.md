@@ -1,9 +1,9 @@
 # 2. Built-in Variables, Strings, Operators
 
 Topics
-* [I. Built-in variables](#built-in-variables)
-* [II. The "+" Operator](#the--operator)
-* [III. Other Operators](#other-operators)
+* [I. Built-in variables](#i-built-in-variables)
+* [II. The "+" Operator](#ii-the--operator)
+* [III. Other Operators](#iii-other-operators)
 
 Exercises
 * [Exercise 0. background()](#ex0)
@@ -64,6 +64,8 @@ Ask Ms. deBB if you need hints.
 </pre>
 
 [![alt text](images/bar.png)](https://jennadeboisblanc.github.io/examples/c0d2e1/)
+
+---
 
 ## II. The "+" Operator
 
