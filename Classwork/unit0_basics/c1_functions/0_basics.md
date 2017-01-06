@@ -2,7 +2,7 @@
 
 Topics
 * [I. Abstraction](#i-abstraction)
-* [II. Passing Arguments](#iii-passing-arguments)
+* [II. Passing Arguments](#ii-passing-arguments)
 * [III. Returning Values](#iii-returning-values)
 
 Exercises
@@ -81,7 +81,7 @@ function add(val1, val2) {  // val1 and val2 are parameters
 <a name="ex1"></a>
 <pre>
 <b>Exercise 1:</b>
-Write a function <b>madLib()<b> that takes 4 strings as arguments (noun, adjective, verb, noun), creates a story, and prints the story to the console.
+Write a function <b>madLib()</b> that takes 4 strings as arguments (noun, adjective, verb, noun), creates a story, and prints the story to the console.
 </pre>
 
 ```javascript
