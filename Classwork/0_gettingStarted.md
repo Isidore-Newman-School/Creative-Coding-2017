@@ -67,7 +67,7 @@ Things aren't updating when you change and save your code? That's probably becau
 
 **NOTE**: This trick will only work when the dev panel is open, so keep that panel open while working on your project.
 
-    ![alt text](images/network.png)
+  ![alt text](images/network.png)
 
 
 ---
