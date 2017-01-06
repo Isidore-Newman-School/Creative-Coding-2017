@@ -58,7 +58,8 @@ If everything worked properly, you should see a blank page titled, p5 template.
 
       Try experimenting with the background() and createCanvas() functions. What happens when you change the values in each?
 
-#### Not updating?
+
+## Not updating?
 
 Things aren't updating when you change and save your code? That's probably because Chrome has cached an old sketch.js file and is ignoring changes. Take the following steps:
 
