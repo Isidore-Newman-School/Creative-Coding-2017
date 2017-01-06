@@ -86,7 +86,7 @@ console.log(y / x);     // 2
 <b>Exercise 1:</b>
 Show your snowman to Ms. deBB to move on to the next chapter.
 
-Modify the **sketch.js** file to create a snowman using 3 ellipses, <em>only this time using variables.</em>
+Modify the <b>sketch.js</b> file to create a snowman using 3 ellipses, <em>only this time using variables.</em>
 Use variables correctly so that the snowman:
 
 1. moves as a unit when the variables "x" and "y" are changed

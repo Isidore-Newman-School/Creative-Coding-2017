@@ -1,12 +1,19 @@
 # 2. Built-in Variables, Strings, Operators
 
 Topics
-* [Built-in variables](#built-in-variables)
-* [The "+" Operator](#The "+" Operator)
+* [I. Built-in variables](#built-in-variables)
+* [II. The "+" Operator](#the--operator)
+* [III. Other Operators](#other-operators)
+
+Exercises
+* [Exercise 0. background()](#ex0)
+* [Exercise 1. mouseX and mouseY](#ex1)
+* [Exercise 2. Concatenation](#ex2)
+* [Exercise 3. Operators](#ex3)
 
 ---
 
-## Built-in variables
+## I. Built-in variables
 So far we've looked at how to create our own variables, but there are a variety of "environment" variables that come with the p5 library (check the [p5 reference](https://p5js.org/reference/) under environment).
 
 What happens when you put the following line of code inside of your draw()?
@@ -21,7 +28,44 @@ What do `width` and `height` represent?
 ellipse(width/2, height/2, 50, 50);   
 ```
 
-## The "+" Operator
+---
+
+<a name="ex0"></a>
+<pre>
+<b>Exercise 0:</b>
+Answer the question in the comment below:
+</pre>
+
+```javascript
+/*
+In the code below, test the placement of background(). How does the placement affect the output? Why?
+
+
+
+*/
+
+function setup() {
+  createCanvas(600, 600);
+  // background(200);
+}
+
+function draw() {
+  // background(200);
+  ellipse(mouseX, mouseY, 30, 30);
+}
+```
+
+<a name="ex1"></a>
+<pre>
+<b>Exercise 1:</b>
+Write a sketch that exhibits the behavior <a href="https://jennadeboisblanc.github.io/examples/c0d2e1/">in this example</a>.
+
+Ask Ms. deBB if you need hints.
+</pre>
+
+[![alt text](images/bar.png)](https://jennadeboisblanc.github.io/examples/c0d2e1/)
+
+## II. The "+" Operator
 
 So far we've only looked at variables that are numbers. Strings are variables that store text.
 
@@ -39,11 +83,15 @@ console.log(firstName + " " + lastName + " rocks!");  // Jenna deBoisblanc rocks
 ```
 ---
 
+<a name="ex2"></a>
 <pre>
-<b>Exercise 0:</b>
-It's also possible to use the "+" operator to concatenate strings with numbers, although the order of the terms matters.
+<b>Exercise 2:</b>
+It's also possible to use the "+" operator to concatenate strings with numbers,
+although the order of the terms matters.
 
-In the code below, answer question 1-6 in the comments below. Check answers with Ms. deBB before moving forward.
+In the code below, answer question 1-6 in the comments below.
+
+Check answers with Ms. deBB before moving forward.
 </pre>
 
 ```javascript
@@ -64,7 +112,7 @@ console.log("7" + (7 + 7));     // 4. what is the output?
 ```
 ---
 
-## Other Operators
+## III. Other Operators
 Check out some of the other math operators in [JavaScript Basics](https://github.com/robynitp/networkedmedia/wiki/Javascript-Basics).
 
 We will go over some of the more common operators, beginning with the "=" or "assignment" operator. Unlike in math, the following statement is valid:
@@ -100,8 +148,10 @@ x--;        // x = 6
 ```
 
 ---
+
+<a name="ex3"></a>
 <pre>
-<b>Exercise 1:</b>
+<b>Exercise 3:</b>
 Fill out the comments below. Be prepared to answer questions like these with pencil and paper on quizzes.
 </pre>
 
