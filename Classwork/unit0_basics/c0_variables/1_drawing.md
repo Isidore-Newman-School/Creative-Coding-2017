@@ -27,10 +27,11 @@ function draw() {
 <a name="ex0"></a>
 <pre>
 <b>Exercise 0:</b>
-Look up the <a href="https://p5js.org/reference/">p5 reference for ellipses</a>.
-What do the four numbers inside of `ellipse(300, 200, 50, 50);` represent?
+Show your snowman to Ms. deBB to move on to the next step.
 
-Create a snowman using the ellipse() function.
+1. Look up the <a href="https://p5js.org/reference/">p5 reference for ellipses</a>.
+2. What do the four numbers inside of <b>ellipse(300, 200, 50, 50);</b> represent?
+3. Create a snowman using the ellipse() function.
 </pre>
 
 ## Variables
@@ -61,7 +62,7 @@ var isHappy = true;               // boolean
 Why use variables? To make code more readable and portable (easy to change).
 
 
-### Arithmetic with variables
+## Arithmetic with variables
 
 We'll use **console.log()** to print values to the console so that we can test arithmetic on variables. Try putting the following code at the top of your sketch.js file:
 
