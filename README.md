@@ -1,6 +1,8 @@
 # Creative Coding S2017
 
-This Github repository will house assignments, homework, notes, and other handouts for Creative Coding.   
+This Github repository will house assignments, homework, notes, and other handouts for Creative Coding. 
+
+[Link to p5 project template](https://github.com/Isidore-Newman-School/p5_template)
 
 ***
 ### Course Description
