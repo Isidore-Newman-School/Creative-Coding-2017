@@ -1,10 +1,13 @@
 # 1. Variables and Drawing
 
-Additional resources:  
-* [**p5.js reference**](http://p5js.org/reference/)
-* Check out the the section on variables and data types in [JavaScript Basics](https://github.com/robynitp/networkedmedia/wiki/Javascript-Basics)
-* [Daniel Shiffman explains variables](https://www.youtube.com/watch?v=RnS0YNuLfQQ)
-* [Daniel Shiffman makes his own variables](https://www.youtube.com/watch?v=Bn_B3T_Vbxs)
+Topics
+* [Shapes and Drawing](#shapes-and-drawing)
+* [Variables](#variables)
+* [Arithmetic with Variables](#arithmetic-with-variables)
+
+Exercises
+* [Exercise 0. Snowman](#ex0)
+* [Chapter Review](#chapter-review)
 
 ---
 
@@ -21,10 +24,11 @@ function draw() {
   ellipse(300, 200, 50, 50);
 }
 ```
-
+<a name="ex0"></a>
 <pre>
 <b>Exercise 0:</b>
-Loop up the <a href="https://p5js.org/reference/">p5 reference for ellipses</a>. What do the four numbers inside of `ellipse(300, 200, 50, 50);` represent?
+Look up the <a href="https://p5js.org/reference/">p5 reference for ellipses</a>.
+What do the four numbers inside of `ellipse(300, 200, 50, 50);` represent?
 
 Create a snowman using the ellipse() function.
 </pre>
@@ -71,7 +75,7 @@ console.log(y / x);     // 2
 
 ---
 
-# Exercise
+# Chapter Review
 
 Modify the **sketch.js** file to create a snowman using 3 ellipses, *only this time using variables.* Use variables correctly so that the snowman:
 
@@ -101,8 +105,15 @@ function draw() {
 }
 ```
 
-## Extra Challenge
+### Extra Challenge
 
 If you finished the basic snowman during class, experiment with other drawing functions like [line()](https://p5js.org/reference/#/p5/line) or [rect()](https://p5js.org/reference/#/p5/rect) to give the snowman arms, a hat, or nose! Check out [beginShape()](https://p5js.org/reference/#/p5/beginShape) for creating custom shapes!
 
 ![alt text](images/snowmen.png)
+
+---
+Additional resources:  
+* [**p5.js reference**](http://p5js.org/reference/)
+* Check out the the section on variables and data types in [JavaScript Basics](https://github.com/robynitp/networkedmedia/wiki/Javascript-Basics)
+* [Daniel Shiffman explains variables](https://www.youtube.com/watch?v=RnS0YNuLfQQ)
+* [Daniel Shiffman makes his own variables](https://www.youtube.com/watch?v=Bn_B3T_Vbxs)

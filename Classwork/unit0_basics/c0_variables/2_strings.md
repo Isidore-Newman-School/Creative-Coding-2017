@@ -1,5 +1,11 @@
 # 2. Built-in Variables, Strings, Operators
 
+Topics
+* [Built-in variables](#built-in-variables)
+* [The "+" Operator](#The "+" Operator)
+
+---
+
 ## Built-in variables
 So far we've looked at how to create our own variables, but there are a variety of "environment" variables that come with the p5 library (check the [p5 reference](https://p5js.org/reference/) under environment).
 
