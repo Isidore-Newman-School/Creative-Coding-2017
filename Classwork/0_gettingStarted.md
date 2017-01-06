@@ -57,8 +57,9 @@ If everything worked properly, you should see a blank page titled, p5 template.
 3. Save the file and reload `http://localhost:8080/` to see changes. See the note below if nothing happens.
 
 
-
-`Try experimenting with the background() and createCanvas() functions. What happens when you change the values in each?`
+```
+Try experimenting with the background() and createCanvas() functions. What happens when you change the values in each?
+```
 
 
 ## Not updating?
@@ -69,6 +70,7 @@ Things aren't updating when you change and save your code? That's probably becau
 2. Click on Network tab and make sure "disable cache" is clicked.
 
 **NOTE**: This trick will only work when the dev panel is open, so keep that panel open while working on your project.
+
 
   ![alt text](images/network.png)
 
