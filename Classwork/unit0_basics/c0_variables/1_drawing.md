@@ -105,4 +105,4 @@ function draw() {
 
 If you finished the basic snowman during class, experiment with other drawing functions like [line()](https://p5js.org/reference/#/p5/line) or [rect()](https://p5js.org/reference/#/p5/rect) to give the snowman arms, a hat, or nose! Check out [beginShape()](https://p5js.org/reference/#/p5/beginShape) for creating custom shapes!
 
-![alt text](snowmen.png)
+![alt text](images/snowmen.png)
