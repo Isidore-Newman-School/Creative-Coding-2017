@@ -57,8 +57,10 @@ If everything worked properly, you should see a blank page titled, p5 template.
 3. Save the file and reload `http://localhost:8080/` to see changes. See the note below if nothing happens.
 
 
-```
-Try experimenting with the background() and createCanvas() functions. What happens when you change the values in each?
+```md
+## EXERCISE
+Try experimenting with the background() and createCanvas() functions.
+What happens when you change the values in each?
 ```
 
 
