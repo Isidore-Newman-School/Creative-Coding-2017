@@ -126,7 +126,9 @@ function add(val1, val2) {
 <a name="ex2"></a>
 <pre>
 <b>Exercise 2:</b>
-Write a function <b>multiply()</b> that has two parameters and <em>returns</em> their product. Use the <b>multiply()</b> function inside of the text() function to display the product of two values on the canvas.
+Write a function <b>multiply()</b> that has two parameters and <em>returns</em> their product.
+Use the <b>multiply()</b> function inside of the text() function to
+display the product of two values on the canvas.
 
 </pre>
 
