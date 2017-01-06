@@ -59,7 +59,7 @@ If everything worked properly, you should see a blank page titled, p5 template.
 
 
 <pre>
-<h4><b>Exercise:</b></h4>
+<b>Exercise:</b>
 Try experimenting with the background() and createCanvas() functions.
 What happens when you change the values in each?
 </pre>
