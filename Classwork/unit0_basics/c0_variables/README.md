@@ -8,34 +8,31 @@ Additional resources:
 
 
 ### Assigning numbers to variables
-There are six different types of variables in JavaScript: numbers, strings, Booleans, objects, functions, and undefined values. Right now we'll look at numbers and strings (text);
+There are six different types of variables in JavaScript: numbers, strings, booleans, objects, functions, and undefined values. 
 
 ```JavaScript
 var x = 100;
 var y = 70.7;                
-var z = "Hello World!";      // this is a string
-
 ```
 
-Why use variables? To make code more readable and portable (easy to change). 
-
-## Built-in variables
-```JavaScript
-// mouseX and mouseY are automatically-assigned the coordinates of the cursor
-ellipse(mouseX, mouseY, 50, 50);
-
-// width and height are automatically-assigned the height/width of the canvas
-ellipse(width/2, height/2, 50, 50);   
-```
-
-### Loosley-typed
-JavaScript is loosely-typed, which (if you're familiar with languages like Java or C++) means that you don't need to declare a variable "type." For example:
+JavaScript is **loosely-typed**, which (if you're familiar with languages like Java or C++) means that you don't need to declare a variable "type"; all types of variables are declared with "var." For example:
 
 ```JavaScript
 var x = 10;
-var y = 10.0;
-var z = "is ten";
-``` 
+var message = "Hello World!";     // string
+var isHappy = true;               // boolean
+```
+
+Why use variables? To make code more readable and portable (easy to change).
+
+### Built-in variables
+```JavaScript
+// mouseX and mouseY are automatically assigned the coordinates of the cursor
+ellipse(mouseX, mouseY, 50, 50);
+
+// width and height are automatically assigned the height/width of the canvas
+ellipse(width/2, height/2, 50, 50);   
+```
 
 ### Arithmetic with variables
 
@@ -61,5 +58,3 @@ console.log("7" + 7 + 7);        // 777
 
 ### Operators
 Check out some of the other math operators in [JavaScript Basics](https://github.com/robynitp/networkedmedia/wiki/Javascript-Basics).
-
-
