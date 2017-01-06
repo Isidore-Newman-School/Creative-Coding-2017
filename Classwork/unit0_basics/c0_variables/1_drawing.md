@@ -34,7 +34,7 @@ Show your snowman to Ms. deBB to move on to the next step.
 3. Create a snowman using the ellipse() function.
 </pre>
 
-  ![alt text](images/snowman0.png)
+  ![alt text](images/snow0.png)
 
 ## Variables
 
