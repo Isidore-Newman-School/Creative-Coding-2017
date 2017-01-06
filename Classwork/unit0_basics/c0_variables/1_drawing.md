@@ -9,6 +9,7 @@ Exercises
 * [Exercise 0. Snowman](#ex0)
 * [Exercise 1. Variable Snowman](#ex1)
 * [Extra Challenge](#extra-challenge)
+
 ---
 
 ## I. Shapes and Drawing
