@@ -43,16 +43,16 @@ If everything worked properly, you should see a blank page titled, p5 template.
 1. Open the `sketch.js` file (which should be inside of the p5-template-master folder) in Atom.
 2. Try adding the following code to this file:
 
-```javascript
-function setup() {
-  createCanvas(600, 600);
-  background(0, 255, 0);
-}
+  ```javascript
+  function setup() {
+    createCanvas(600, 600);
+    background(0, 255, 0);
+  }
 
-function draw() {
+  function draw() {
 
-}
-```
+  }
+  ```
 
 3. Save the file and reload `http://localhost:8080/` to see changes. See the note below if nothing happens.
 
