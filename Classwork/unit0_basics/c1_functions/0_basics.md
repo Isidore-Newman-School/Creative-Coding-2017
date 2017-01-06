@@ -121,6 +121,8 @@ function add(val1, val2) {
 }
 ```
 
+---
+
 <a name="ex2"></a>
 <pre>
 <b>Exercise 2:</b>
