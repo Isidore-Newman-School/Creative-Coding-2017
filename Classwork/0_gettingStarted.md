@@ -60,8 +60,8 @@ If everything worked properly, you should see a blank page titled, p5 template.
 
 <pre>
 <h3><b>Exercise:</b></h3>
-<p>Try experimenting with the background() and createCanvas() functions.<br/>
-What happens when you change the values in each?</p>
+Try experimenting with the background() and createCanvas() functions.
+What happens when you change the values in each?
 </pre>
 
 
