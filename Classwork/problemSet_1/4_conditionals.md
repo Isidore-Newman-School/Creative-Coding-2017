@@ -5,9 +5,70 @@ Additional resources / notes:
 
 ---
 
-### if / else
+## Comparison Operators
+In computer science, we frequently need to compare values to determine: are the values equal? Is one greater than another? Less than? A variety of operators exist to compare values.
 
-We can use conditionals to make an ellipse blue if the mouse is on the left half of the canvas, and red if it's on the right side of the canvas:
+The first operator we'll look at is the **equality** operator.
+* "==" (equality operator) tests if two values are equal
+* "===" (strict equality operator) tests if the two values are of the same value *and the same type*.
+
+*NOTE*: do not get confused with the "=" (assignment operator) that assigns values to variables. This operator *is not involved in comparison*
+
+```JavaScript
+5 == 5       // true
+"5" == 5     // true
+"5" === 5    // false
+```
+
+---
+
+<a name="ex0"></a>
+<pre>
+<b>Exercise 0:</b>
+Check out some of the  <a href="http://www.w3schools.com/js/js_comparisons.asp">Javascript comparison
+operators</a>, and fill in the missing boxes below by creating a chart on paper.
+</pre>
+
+`x = 8`
+
+| Operator | Description | Comparing | Returns |
+| --- | --- | --- | --- |
+| == |        | x == 8  | |
+|    |        | x == '8' | |
+| === |       | x === 8  | |
+|     |       |  x === '8' | |
+| !=  |       | x != 8  | |
+|     |       |  x != '8' | |
+|     |       |  x != '7' | |
+|  !==   |       |  x !== 8 | |
+|     |       |  x !== '8' | |
+|  >   |       |  x > 8 | |
+|  >=   |       |  x >= 8 | |
+|  <=   |       |  x <= 8 | |
+
+---
+
+## Booleans
+So far we've looked at two data types- numbers and strings ("hello!"). As we move into exploring conditional logic, a new type of variable is going to become important: booleans. Booleans store if values are *true* or *false*.
+
+```javascript
+var a = true;
+var b = false;
+```
+---
+
+<a name="ex1"></a>
+<pre>
+<b>Exercise 1:</b>
+On the <a href="https://p5js.org/reference/">reference</a> page under "Events", find
+<b>two built-in variables</b>- one under keyboard and one under mouse- that are booleans.
+</pre>
+
+---
+
+## if / else
+
+Conditional statements are used to give our programs logical flow. We can use conditionals to make an ellipse blue if the mouse is on the left half of the canvas, and red if it's on the right side of the canvas:
 
 ```JavaScript
 function setup() {
@@ -30,25 +91,10 @@ function draw() {
 
 ---
 
-<a name="ex0"></a>
+<a name="ex2"></a>
 <pre>
-<b>Exercise 0:</b>
-So far we've looked at two data types: numbers and strings ("hello!"). <b>Booleans</b> store <b>true</b>
-or <b>false</b>. We can create variables and assign them to booleans:
-</pre>
-
-    ```javascript
-    var b1 = false;
-    var b2 = true;
-    ```
-<pre> On the <a href="https://p5js.org/reference/">reference</a> page under "Events", look for
-<b>two built-in variables</b>- one under keyboard and one under mouse- that are booleans.
-</pre>
-
-<a name="ex1"></a>
-<pre>
-<b>Exercise 1:</b>
-Look up the boolean variable, mouseIsPressed, and the text() function in the <a href="https://p5js.org/reference/">reference</a>.
+<b>Exercise 2:</b>
+Use mouseIsPressed and the text() function in the <a href="https://p5js.org/reference/">reference</a>.
 
 Replicate <a href="https://jennadeboisblanc.github.io/examples/c4e0/">this example</a>.
 </pre>
@@ -57,7 +103,7 @@ Replicate <a href="https://jennadeboisblanc.github.io/examples/c4e0/">this examp
 
 ---
 
-### if / else if / else
+## if / else if / else
 
 If we want to write a function printSign() that takes a single argument and that prints whether the value is positive, neither (zero), or negative:
 
@@ -87,18 +133,17 @@ function printSign(val) {
 
 ---
 
-<a name="ex1"></a>
+<a name="ex3"></a>
 <pre>
-
+<b>Exercise 3:</b>
+Begin by read the <a href="https://p5js.org/reference/#/p5/keyPressed">keyPressed()</a> reference.
 Write a simple program that changes the location of a rectangle on the screen when
 the arrow keys are pressed. <a href="https://jennadeboisblanc.github.io/examples/c4e1/">Here's an example</a>.
 
+Make sure to:
 1. use the code below
-2. read the <a href="https://p5js.org/reference/#/p5/keyPressed">keyPressed()</a> reference
-3. write an if / else if / else statement
-
+2. use an if / else if / else statement
 </pre>
-
 
 ```javascript
 var x = 0;
@@ -120,16 +165,6 @@ function keyPressed() {
 
 ---
 
-### "===" operator
-If we're testing if two numbers are equal we can use the "==" operator. If we want to compare the string "5" to the number 5, the "==" operator will convert the string to a number before comparison. In this case, it will say that "5" is equal to 5.
-
-The "===" operator, on the other hand, tests if the two values are of the same value *and the same type*.
-
-```JavaScript
-5 == 5       // true
-"5" == 5     // true
-"5" === 5    // false
-```
 
 
 ### multiple conditions
@@ -154,8 +189,11 @@ if (x === 3 || x === 5) {
 }
 ```
 
-<a name="ex2"></a>
+<a name="ex4"></a>
 <pre>
-<b>Exercise 2:</b>
-Use the || operator  
+<b>Exercise 4:</b>
+1. Use a compound operator (either || or &&) to write a conditional statement that makes the screen blue if the mouse is in the middle third of the canvas, and red otherwise.
+2. Do the same exercise again, only use the operator that you didn't use (either || or &&).
+
+Replicate <a href="https://jennadeboisblanc.github.io/examples/c4e4/">this example</a>.
 </pre>
