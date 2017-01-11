@@ -136,7 +136,7 @@ function printSign(val) {
 <a name="ex3"></a>
 <pre>
 <b>Exercise 3:</b>
-Begin by read the <a href="https://p5js.org/reference/#/p5/keyPressed">keyPressed()</a> reference.
+Begin by reading the <a href="https://p5js.org/reference/#/p5/keyPressed">keyPressed()</a> reference.
 Write a simple program that changes the location of a rectangle on the screen when
 the arrow keys are pressed. <a href="https://jennadeboisblanc.github.io/examples/c4e1/">Here's an example</a>.
 
@@ -188,6 +188,8 @@ if (x === 3 || x === 5) {
   // execute some code!
 }
 ```
+
+---
 
 <a name="ex4"></a>
 <pre>
