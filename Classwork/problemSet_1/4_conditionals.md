@@ -37,10 +37,10 @@ So far we've looked at two data types: numbers and strings ("hello!"). <b>Boolea
 or <b>false</b>. We can create variables and assign them to booleans:
 </pre>
 
-  ```javascript
-  var b1 = false;
-  var b2 = true;
-  ```
+    ```javascript
+    var b1 = false;
+    var b2 = true;
+    ```
 <pre> On the <a href="https://p5js.org/reference/">reference</a> page under "Events", look for
 <b>two built-in variables</b>- one under keyboard and one under mouse- that are booleans.
 </pre>
