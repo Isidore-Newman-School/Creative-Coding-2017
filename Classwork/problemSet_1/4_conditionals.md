@@ -194,8 +194,11 @@ if (x === 3 || x === 5) {
 <a name="ex4"></a>
 <pre>
 <b>Exercise 4:</b>
-1. Use a compound operator (either || or &&) to write a conditional statement that makes the screen blue if the mouse is in the middle third of the canvas, and red otherwise.
+1. Use a compound operator (either || or &&) to write a conditional statement that makes the screen
+blue if the mouse is in the middle third of the canvas, and red otherwise.
 2. Do the same exercise again, only use the operator that you didn't use (either || or &&).
 
 Replicate <a href="https://jennadeboisblanc.github.io/examples/c4e4/">this example</a>.
 </pre>
+
+![thirds](images/thirds.png)
