@@ -1,4 +1,4 @@
-# 2. Notes on Conditionals
+# 4. Conditionals
 
 Topics
 * [I. Comparison Operators](#i-comparison-operators)
