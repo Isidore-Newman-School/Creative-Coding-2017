@@ -211,8 +211,3 @@ Replicate <a href="https://jennadeboisblanc.github.io/examples/c4e4/">this examp
 </pre>
 
 ![thirds](images/thirds.png)
-
----
-
-Additional resources / notes:
-* Check out the section on conditionals in [JavaScript Basics](https://github.com/robynitp/networkedmedia/wiki/Javascript-Basics#conditionals)
