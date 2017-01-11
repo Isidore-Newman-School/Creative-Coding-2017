@@ -77,10 +77,10 @@ function doubleRainbow() {
 }
 ```
 
-![alt text](images/doubleRainbow.png)
+  ![alt text](images/doubleRainbow.png)
 
 
-**(4)** In computer science the "%" (a.k.a. the modulo operator) is surprisingly useful. It is used to calculate the remainder after dividing the first number from the second. E.g.:
+**(3)** In computer science the "%" (a.k.a. the modulo operator) is surprisingly useful. It is used to calculate the remainder after dividing the first number from the second. E.g.:
 
     5%2 = 1;
     4%2 = 0;
