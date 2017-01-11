@@ -1,18 +1,15 @@
 # 5. Loops
 
 Topics
-* [I. Comparison Operators](#i-comparison-operators)
-* [II. Booleans](#ii-booleans)
-* [III. if / else](#iii-if--else)
-* [IV. if / else if / else](#iv-if--else-if--else)
-* [V. Multiple Conditions](#v-multiple-conditions)
+* [I. For Loops](#i-for-loops)
+* [II. Nested Loops](#ii-nested-loops)
+* [III. While Loops](#iii-while-loops)
 
 Exercises
 * [Exercise 0. Comparison Operators](#ex0)
 * [Exercise 1. Booleans](#ex1)
 * [Exercise 2. Click Me](#ex2)
 * [Exercise 3. Keyboard Controls](#ex3)
-* [Exercise 4. One Third Canvas](#ex4)
 
 ---
 
