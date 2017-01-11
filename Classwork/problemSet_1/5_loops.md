@@ -6,11 +6,11 @@ Topics
 * [III. While Loops](#iii-while-loops)
 
 Exercises
-* [Exercise 0. Comparison Operators](#ex0)
-* [Exercise 1. Booleans](#ex1)
-* [Exercise 2. Click Me](#ex2)
-* [Exercise 3. Keyboard Controls](#ex3)
-
+* [Exercise 0. For Loop](#ex0)
+* [Exercise 1. Diagonal Loop](#ex1)
+* [Exercise 2. Gradient](#ex2)
+* [Exercise 3. Nested Loop](#ex3)
+* [Exercise 4. While Loop](#ex4)
 ---
 
 ## I. For Loops
@@ -40,6 +40,7 @@ for (var x = 0; x < 10; x++) {
 
 ---
 
+#### Drawing Ellipses
 Let's say we want to draw 10 ellipses, but we want to reduce the number of lines of code. We can use a for loop in the following manner:
 
 ```javascript
@@ -55,7 +56,7 @@ function draw() {
 }
 ```
 
-![for loop ellipses](images/forellip2.png)
+  ![for loop ellipses](images/forellip2.png)
 
 ---
 
@@ -63,9 +64,54 @@ function draw() {
 <pre>
 <b>Exercise 1:</b>
 How can we use a for loop to create the image below?
+
+Hint: fill(0) is black and fill(255) is white...
 </pre>
 
-![diagonal for loop](images/hw0_loops1.png)
+  ![diagonal for loop](images/hw0_loops1.png)
+
+---
+
+#### Gradient with colorMode()
+
+Let's do something a little more fancy. Let's make a rainbow gradient! We'll use [**colorMode(HSB, 1)**](http://p5js.org/reference/#/p5/colorMode) to switch from a RGB color scale to a HSB (hue, saturation, brightness) scale.
+
+The advantage of this scale is that we can adjust the value of the hue while keeping saturation and brightness constant in order to cycle through the colors of the rainbow.
+
+*NOTE*: The second argument of colorMode() (100 in the example below), sets the max value of the range of number the function accepts. So in the example below, instead of a range of 0-255, the color scale will be out of 0-100.
+
+```javascript
+colorMode(HSB, 100);
+// fill(0, 100, 100);   -> red at full brightness and saturation
+// fill(10, 100, 100);  -> orange at full brightness and saturation
+// fill(20, 100, 100);  -> yellow at full brightness and saturation
+// ...
+// fill(100, 100, 100);  -> pink at full brightness and saturation
+```
+
+```javascript
+function setup() {
+  createCanvas(400, 400);
+  colorMode(HSB, 100);  
+}
+
+function draw() {
+  for (var i = 0; i < width; i++) {
+     stroke(i/4, 100, 100);
+     line(i, 0, i, height)
+  }
+}
+```
+
+![alt text](rainbowgrad4.png)
+
+---
+
+<a name="ex2"></a>
+<pre>
+<b>Exercise 2:</b>
+In the previous example, why did we divide i/4 in the stroke?
+</pre>
 
 ---
 
@@ -92,13 +138,13 @@ function draw() {
 
 ---
 
-<a name="ex2"></a>
+<a name="ex3"></a>
 <pre>
-<b>Exercise 2:</b>
-
+<b>Exercise 3:</b>
+Use a nested for loop to create the image below.
 </pre>
 
-![alt text](images/exercise1.png)
+  ![alt text](images/exercise1.png)
 
 ---
 
@@ -107,7 +153,33 @@ function draw() {
 While loops are also used to repeatedly execute code. Unlike for loops, however, while loops continue to repeat as long as the input condition is true. E.g.:
 
 ```javascript
-while( /* boolean test */ ) {
-    // code to repeat goes here
+var i = 0;
+while( i < 10 ) {
+    i += 2;
 }
+```
+**Beware**: It's easy to accidentally cause an *"infinite loop"* by failing to create conditions that exit the while loop.
+
+---
+
+<a name="ex4"></a>
+<pre>
+<b>Exercise 4:</b>
+With *pencil and paper*, prove why console.log() outputs "4 16"
+
+Hint: Use a table to keep track of the value of x and y as you step through the program.
+</pre>
+
+```javascript
+var x = 10;
+var y = 1;
+
+while (x > 5) {
+  while (y < x) {
+    y *= 2;
+  }
+  x -= 2;
+}
+
+console.log(x + " " + y);
 ```

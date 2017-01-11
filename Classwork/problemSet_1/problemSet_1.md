@@ -22,7 +22,7 @@ Problem sets should be completed **individually**, but *if you have questions, d
 
 ```javascript
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(500, 500);
   didGreeniesWin("Pope John Paul II", 21, 14);
   didGreeniesWin("Jesuit", 3, 40);
 }
@@ -41,8 +41,7 @@ var speed = 10;
 var direction = 1;
 
 function setup() {
-  createCanvas(600, 600);
-  colorMode(HSB, windowHeight);
+  createCanvas(500, 500);
 }
 
 function draw() {
@@ -61,8 +60,75 @@ function bounceEllipse() {
 
 ## Loops
 
-**(2)**
+**(2)** Fill out the function, **doubleRainbow()**. Use a single for loop to create the following image:
 
-##
+```javascript
+function setup() {
+  createCanvas(500, 500);
+  colorMode(HSB, 10);
+}
 
-**(3)**
+function draw() {
+  doubleRainbow();
+}
+
+function doubleRainbow() {
+  // your code here
+}
+```
+
+![alt text](images/doubleRainbow.png)
+
+
+**(4)** In computer science the "%" (a.k.a. the modulo operator) is surprisingly useful. It is used to calculate the remainder after dividing the first number from the second. E.g.:
+
+    5%2 = 1;
+    4%2 = 0;
+    3%2 = 1;
+    2%2 = 0;
+    1%2 = 1;
+    0%2 = 0;
+
+We can use the modulo operator to determine if a number is even (divisible by 2). For example:
+
+```javascript
+var num = 5;
+if (num % 2 == 0) {
+  // no remainder, must be divisible by 2
+  // i.e. even
+}
+else {
+  // not divisible by 2
+}
+```
+
+Using the example above, write a function, **fooBarFizz()**, that uses a for loop to iterate from 1 to 20. For each iteration, it prints the number and:
+1. if the number is divisible by 2, print "foo"
+2. if the number is divisible by 3, print "bar"
+3. if the number is divisible by both 2 and 3, print "fuzz"
+
+E.g.
+
+    1
+    2 foo
+    3 bar
+    4 foo
+    5
+    6 fuzz
+    7
+    ... etc.
+
+
+```javascript
+function setup() {
+  createCanvas(500, 500);
+}
+
+function draw() {
+  fooBarFizz();
+}
+
+function fooBarFizz() {
+  // your code here
+}
+```
