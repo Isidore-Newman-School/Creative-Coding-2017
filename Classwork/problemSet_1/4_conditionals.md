@@ -1,11 +1,22 @@
 # 2. Notes on Conditionals
 
-Additional resources / notes:
-* Check out the section on conditionals in [JavaScript Basics](https://github.com/robynitp/networkedmedia/wiki/Javascript-Basics#conditionals)
+Topics
+* [I. Comparison Operators](#i-comparison-operators)
+* [II. Booleans](#ii-booleans)
+* [III. if / else](#iii-if--else)
+* [IV. if / else if / else](#iv-if--else-if--else)
+* [V. Multiple Conditions](#v-multiple-conditions)
+
+Exercises
+* [Exercise 0. Comparison Operators](#ex0)
+* [Exercise 1. Booleans](#ex1)
+* [Exercise 2. Click Me](#ex2)
+* [Exercise 3. Keyboard Controls](#ex3)
+* [Exercise 4. One Third Canvas](#ex4)
 
 ---
 
-## Comparison Operators
+## I. Comparison Operators
 In computer science, we frequently need to compare values to determine: are the values equal? Is one greater than another? Less than? A variety of operators exist to compare values.
 
 The first operator we'll look at is the **equality** operator.
@@ -25,8 +36,8 @@ The first operator we'll look at is the **equality** operator.
 <a name="ex0"></a>
 <pre>
 <b>Exercise 0:</b>
-Check out some of the  <a href="http://www.w3schools.com/js/js_comparisons.asp">Javascript comparison
-operators</a>, and fill in the missing boxes below by creating a chart on paper.
+Check out some of the  <a href="http://www.w3schools.com/js/js_comparisons.asp">Javascript comparison operators</a>, and fill in the missing
+boxes below by creating a chart on paper.
 </pre>
 
 `x = 8`
@@ -48,7 +59,7 @@ operators</a>, and fill in the missing boxes below by creating a chart on paper.
 
 ---
 
-## Booleans
+## II. Booleans
 So far we've looked at two data types- numbers and strings ("hello!"). As we move into exploring conditional logic, a new type of variable is going to become important: booleans. Booleans store if values are *true* or *false*.
 
 ```javascript
@@ -165,9 +176,7 @@ function keyPressed() {
 
 ---
 
-
-
-### multiple conditions
+## Multiple Conditions
 We can use [logical operators](https://github.com/robynitp/networkedmedia/wiki/Javascript-Basics#operators) to make compound conditional statements.
 
 For example, we can use the logical "&&" operator to test if x is between -5 **AND** 5:
@@ -202,3 +211,8 @@ Replicate <a href="https://jennadeboisblanc.github.io/examples/c4e4/">this examp
 </pre>
 
 ![thirds](images/thirds.png)
+
+---
+
+Additional resources / notes:
+* Check out the section on conditionals in [JavaScript Basics](https://github.com/robynitp/networkedmedia/wiki/Javascript-Basics#conditionals)
