@@ -99,7 +99,7 @@ Use mouseIsPressed and the text() function in the <a href="https://p5js.org/refe
 Replicate <a href="https://jennadeboisblanc.github.io/examples/c4e0/">this example</a>.
 </pre>
 
-![click me image](images/clickme.png)
+[![click me image](images/clickme.png)](https://jennadeboisblanc.github.io/examples/c4e0/)
 
 ---
 
