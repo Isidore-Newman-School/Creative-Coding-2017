@@ -43,10 +43,10 @@ Show your snowman to Ms. deBB to move on to the next step.
 
 A **variable** in computer science is used to store a value. They have a descriptive name, known as the **identifier**, and they have a **data type**. There are six different types of variables in JavaScript:
   1. numbers
-  2. strings
-  3. booleans
+  2. strings        ("Hello!")
+  3. booleans       (true / false
   4. objects
-  5. functions
+  5. functions      
   6. undefined values
 
 For now, we're just going to worry about numbers. You can *declare* variables and subsequently *assign* values in the following way:
@@ -56,20 +56,12 @@ var x = 100;
 var y = 70.7;                
 ```
 
-JavaScript is **loosely-typed**, which (if you're familiar with languages like Java or C++) means that you don't need to declare a variable "type"; all types of variables are declared with "var." For example:
-
-```JavaScript
-var x = 10;
-var message = "Hello World!";     // string
-var isHappy = true;               // boolean
-```
-
 Why use variables? To make code more readable and portable (easy to change).
 
 
 ## III. Arithmetic with variables
 
-We'll use **console.log()** to print values to the console so that we can test arithmetic on variables. Try putting the following code at the top of your sketch.js file:
+We'll use **console.log()** to print values to the console so that we can test arithmetic on variables. Try putting the following code at the top of your sketch.js file. Open the console by right clicking on the page, clicking "inspect", and selecting the "console" tab in the developer panel.
 
 ```JavaScript
 var x = 5;

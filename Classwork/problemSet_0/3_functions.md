@@ -42,7 +42,7 @@ function newmanColors() {
 <a name="ex0"></a>
 <pre>
 <b>Exercise 0:</b>
-Right a function, **goGreenies()**, that prints to the console, "Go Greenies!" and draws a green ellipse where the cursor is. Call this function in the draw().
+Write a function, <b>goGreenies()</b>, that prints to the console, "Go Greenies!" and draws a green ellipse where the cursor is. Call this function in the draw().
 </pre>
 
 ```javascript

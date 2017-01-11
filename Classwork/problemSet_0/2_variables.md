@@ -33,17 +33,11 @@ ellipse(width/2, height/2, 50, 50);
 <a name="ex0"></a>
 <pre>
 <b>Exercise 0:</b>
-Answer the question in the comment below:
+In the code below, test the placement of background(). How does the placement affect the output? Why?
+
 </pre>
 
 ```javascript
-/*
-In the code below, test the placement of background(). How does the placement affect the output? Why?
-
-
-
-*/
-
 function setup() {
   createCanvas(600, 600);
   // background(200);
@@ -58,7 +52,8 @@ function draw() {
 <a name="ex1"></a>
 <pre>
 <b>Exercise 1:</b>
-Write a sketch that exhibits the behavior <a href="https://jennadeboisblanc.github.io/examples/c0d2e1/">in this example</a>.
+1. Use the built-in variables: mouseX, mouseY, width, and height.
+2. Write a sketch that exhibits the behavior <a href="https://jennadeboisblanc.github.io/examples/c0d2e1/">in this example</a>.
 
 Ask Ms. deBB if you need hints.
 </pre>
