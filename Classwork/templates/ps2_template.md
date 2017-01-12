@@ -1,5 +1,5 @@
 
-# Problem Set 1 Template
+# Problem Set 2 Template
 
 You can comment/ uncomment certain sections to test code by highlighting the area in question and pressing `CTRL + /` or `COMMAND + /`.
 

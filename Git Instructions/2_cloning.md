@@ -2,9 +2,19 @@
 
 This section covers submitting to GitHub for the first time. Each student was assigned a private repository (repo). When students save work in this repo locally (on their computers) and subsequently "push" it to GitHub, Ms. deBB will be able to see the submitted assignment.
 
-You should have automatically created your repo by clicking on a link on the class iNewman page. Your repo should be something like, `ccs2017-jennadeboisblanc`.
+You should have automatically created your repo by clicking on a link on the class iNewman page. Your repo should be something like, `ccs2017-jennadeboisblanc`. To find it:
 
-![alt text](images/3_contrib1.png)
+  1. click on your profile icon and select "profile"
+
+    ![alt text](images/gettoprof.png)
+
+  2. click on *repositories*
+
+    ![alt text](images/findrepos.png)
+
+  3. Click on the `ccs2017-[your user name]`. It should look something like this:
+
+    ![alt text](images/clonelines_orig.png)
 
 
 ## Navigate to local directory
@@ -20,25 +30,18 @@ cd /Users/[jennadeboisblanc]/Documents/Coding
 
 ## Clone GitHub Repo
 
-* Find the empty repo on GitHub. The page should look something like the following:
+* Go back to your repo on GitHub.
 
-![alt text](images/3_repo1.png)
+* To make a local copy of this repo, follow the instructions to **create a new repository on the command line** by *copying that code in the red box below* and pasting it into your terminal.
 
-* To make a local copy of this repo, follow the instructions to **create a new repository on the command line** by copying that code and pasting it into your terminal. We will discuss these commands in the next section. For now, just know that you created a README.md file with the heading "# your-repo", initialized a local git repo, and subsequently pushed this local repo to GitHub. In my case, I pasted the following commands:
-
-```bash
-echo "# Jenna-deBoisblanc" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git remote add origin git@github.com:Isidore-Newman-School/Jenna-deBoisblanc.
-git push -u origin master
-```
+  ![alt text](images/clonelines.png)
 
 
-* If that worked, you should now have a README.md file on your computer in the directory where you typed these commands (in my case, Documents > Coding). If you refresh the online page, you should now see a blank README.md:
+We will discuss these commands in the next section. For now, just know that you created a README.md file with the heading "# your-repo", initialized a local git repo, and subsequently pushed this local repo to GitHub. In my case, I pasted the following commands:
 
-![alt text](images/3_readme1.png)
+If that worked, you should now have a README.md file on your computer *and* online when you refresh the page of the `ccs2017-[your user name]` repo.
+
+  ![alt text](images/3_readme1.png)
 
 
 ---
