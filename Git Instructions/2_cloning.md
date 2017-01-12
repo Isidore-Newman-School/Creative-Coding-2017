@@ -4,7 +4,10 @@ This section covers submitting to GitHub for the first time. Each student was as
 
 ## Navigate to local directory
 
-In Git for Windows (or in a terminal window if you're on Mac OS/ Linux) navigate to the folder *on you computer* where you'd like the local copy of your repository to live. You may want to create a folder first, and then change into that directory.
+In Git for Windows (or in a terminal window if you're on Mac OS/ Linux) navigate to the folder *on you computer* where you'd like the local copy of your repository to live.
+
+1. If you don't already have a *Creative Coding* folder on your computer, create it now.
+2. Change into that directory.
 
 If you'd like your GitHub repo to be saved in the "Coding" folder, cd to this directory:
 
