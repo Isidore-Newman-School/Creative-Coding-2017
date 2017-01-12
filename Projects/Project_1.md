@@ -5,6 +5,7 @@ In Project 1 students will demonstrate proficiency with JavaScript fundamentals 
 * [The p5 gallery](https://p5js.org/gallery/)
 * The bizarre (and usually funny) site, [theuselessweb.com](https://theuselessweb.com)
 * [100 Days of Click Art](http://leslieruckman.tumblr.com/)
+* [Previous "Creative Coding" classes](https://isidore-newman-school.github.io/cc2016F.html)
 
 ![100 Days of Click Art](images/click1.gif)
 ![alt text](images/click2.gif)
