@@ -41,7 +41,9 @@ You should have automatically created your online GitHub repo by clicking on a l
 
 We will discuss these commands in the next section. For now, just know that you created a README.md file with the heading "# your-repo", initialized a local git repo, and subsequently pushed this local repo to GitHub.
 
-If that worked, you should now have a README.md file on your computer *and* online when you refresh the page of the `ccs2017-[your user name]` repo.
+**If that worked**, you should now have
+1. a README.md file on your computer
+2. a README.md online with the heading, `ccs2017-[your username]` when you refresh the page of the of online repo. E.g.:
 
   ![alt text](images/readmeup.png)
 
