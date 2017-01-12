@@ -31,7 +31,8 @@ And finally, we need to push these changes from our computer to GitHub so that M
 git push origin master
 ```
 
-If everything worked as planned, the online GitHub page should be updated to reflect the changes that you made locally on your computer.
+## If everything worked as planned... 
+The online GitHub page should be updated to reflect the changes that you made locally on your computer.
 
 
 ---
