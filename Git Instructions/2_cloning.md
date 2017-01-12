@@ -2,7 +2,7 @@
 
 This section covers submitting to GitHub for the first time. Each student was assigned a private repository (repo). When students save work in this repo locally (on their computers) and subsequently "push" it to GitHub, Ms. deBB will be able to see the submitted assignment.
 
-You should have received an email to be a collaborator on a private repo with your name. Ask Ms. deBB if you did not receive this email or if you do not see this repository in your online profile:
+You should have automatically created your repo by clicking on a link on the class iNewman page. Your repo should be something like, `ccs2017-jennadeboisblanc`.
 
 ![alt text](images/3_contrib1.png)
 
