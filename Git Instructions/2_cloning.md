@@ -43,6 +43,7 @@ We will discuss these commands in the next section. For now, just know that you 
 
 ## If everything worked...
 You should now have:
+
 1. a README.md file on your computer in your coding folder
 2. a README.md online with the heading, `ccs2017-[your username]` when you refresh the page of the of online repo. E.g.:
 
