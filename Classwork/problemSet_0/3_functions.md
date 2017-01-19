@@ -1,7 +1,7 @@
 # c1. Functions
 
 Topics
-* [I. Abstraction](#i-abstraction)
+* [I. Why functions?](#i-why-functions)
 * [II. Passing Arguments](#ii-passing-arguments)
 * [III. Returning Values](#iii-returning-values)
 
@@ -13,12 +13,15 @@ Exercises
 
 ---
 
-## I. Abstraction
-Functions are important in computer science for:
-* making code easier to read and understand
-* preventing code repetition
+## I. Why functions?
 
-*Abstraction* in computer science is the process of organizing complex code into discrete, simple units. Writing functions is one example of abstraction at play: by grouping lines of code under the heading of a function name, we reduce the complexity of our program and make it easier to understand.
+A functions is a block of code that performs a task or calculates a value. This block of code is referred to by a name (e.g. `background()`).
+
+Functions are important in computer science for:
+1. making code easier to read and understand
+2. preventing code repetition
+
+**Abstraction** in computer science is the process of organizing complex code into discrete, simple units. Writing functions is one example of abstraction at play: by grouping lines of code under the heading of a function name, we reduce the complexity of our program and make it easier to understand.
 
 As an example, the function **newmanColors()** is an easy way to designate that we'll apply Newman colors to shapes (as opposed to **jesuitColors()** which might apply blue colors). The Newman function sets the stroke to Newman green and the fill to white:
 
