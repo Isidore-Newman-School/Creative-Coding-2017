@@ -15,9 +15,8 @@ Exercises
 
 ## I. Why functions?
 
-A functions is a block of code that performs a task or calculates a value. This block of code is referred to by a name (e.g. `background()`).
+A **function** is a block of code that performs a task or calculates a value. This block of code is referred to by a name (e.g. `background()`). Functions are important in computer science for:
 
-Functions are important in computer science for:
 1. making code easier to read and understand
 2. preventing code repetition
 
