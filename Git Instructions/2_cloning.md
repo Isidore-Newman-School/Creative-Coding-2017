@@ -19,18 +19,8 @@ cd /Users/[jennadeboisblanc]/Documents/Coding
 
 You should have automatically created your online GitHub repo by clicking on a link on the class iNewman page. Your repo should be something like, `ccs2017-jennadeboisblanc`. To find it:
 
-  1. click on your profile icon and select "profile"
-
-    ![alt text](images/gettoprof.png)
-
-  2. click on *repositories*
-
-    ![alt text](images/findrepos.png)
-
-  3. Click on the `ccs2017-[your user name]`. It should bring you to a page that looks something like this:
-
-    ![alt text](images/clonelines_orig.png)
-
+  1. Go to [Isidore Newman Repositories page](https://github.com/Isidore-Newman-School)
+  2. Search/ look for `cc2017s-[your name]` and click on it
 
 ## Clone GitHub Repo
 
