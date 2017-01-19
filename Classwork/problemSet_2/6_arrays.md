@@ -1,103 +1,117 @@
-<!-- # 6. Arrays
+# 6. Arrays
 
 Topics
-* [I. Comparison Operators](#i-comparison-operators)
-* [II. Booleans](#ii-booleans)
-* [III. if / else](#iii-if--else)
-* [IV. if / else if / else](#iv-if--else-if--else)
-* [V. Multiple Conditions](#v-multiple-conditions)
+* [I. Accessing Arrays](#i-accessing-arrays)
+* [II. Loops and Arrays](#ii-loops-and-arrays)
+* [III. Aggregation](#iii-aggregation)
+* [IV. Other array methods](#iv-other-array-methods)
+* [V. Multi-dimensional Arrays](#v-multi-dimensional-arrays)
 
 Exercises
-* [Exercise 0. Comparison Operators](#ex0)
-* [Exercise 1. Booleans](#ex1)
-* [Exercise 2. Click Me](#ex2)
-* [Exercise 3. Keyboard Controls](#ex3)
-* [Exercise 4. One Third Canvas](#ex4)
+* [Exercise 0](#ex0)
+* [Exercise 1](#ex1)
+* [Exercise 2](#ex2)
+* [Exercise 3](#ex3)
+* [Exercise 4](#ex4)
+* [Exercise 5](#ex5)
 
 ---
 
-## I. Comparison Operators
-In computer science, we frequently need to compare values to determine: are the values equal? Is one greater than another? Less than? A variety of operators exist to compare values.
+## I. Accessing Arrays
 
-The first operator we'll look at is the **equality** operator.
-* "==" (equality operator) tests if two values are equal
-* "===" (strict equality operator) tests if the two values are of the same value *and the same type*.
+Arrays are used to store multiple values in a single variable. Arrays can store any type of data:
 
-*NOTE*: do not get confused with the "=" (assignment operator) that assigns values to variables. This operator *is not involved in comparison*
+  ```javascript
+  var emptyArray = [];
+  var names = ["Jenna", "Jessica", "James"];
+  var years = [2019, 2017, 2015, 2000];
+  var random = [ "woot!", -19.4, false];
+  ```
 
-```JavaScript
-5 == 5       // true
-"5" == 5     // true
-"5" === 5    // false
-```
+We can use an index (beginning with 0) to access the values in an array:
+
+  ```javascript
+  var  arr = [10, "Jenna", true];
+
+  console.log(arr[0]);        // 10
+  console.log(arr[1]);        // "Jenna"
+  console.log(arr[2]);        // true
+  ```
+
+Or we can use an index to set values of an array:
+
+  ```javascript
+  var  arr = [10, "Jenna", true];
+
+  arr[0] = -17;
+  console.log(arr[0]);        // -17
+  console.log(arr[1]);        // "Jenna"
+  ```
 
 ---
 
 <a name="ex0"></a>
 <pre>
 <b>Exercise 0:</b>
-Check out some of the  <a href="http://www.w3schools.com/js/js_comparisons.asp">Javascript comparison operators</a>, and fill in the missing
-boxes below by creating a chart on paper.
+Using the array below, print to the console, "Jenna deBB lives in 70115 (New Orleans, LA)"
 </pre>
 
-`x = 8`
-
-| Operator | Description | Comparing | Returns |
-| --- | --- | --- | --- |
-| == |        | x == 8  | |
-|    |        | x == '8' | |
-| === |       | x === 8  | |
-|     |       |  x === '8' | |
-| !=  |       | x != 8  | |
-|     |       |  x != '8' | |
-|     |       |  x != '7' | |
-|  !==   |       |  x !== 8 | |
-|     |       |  x !== '8' | |
-|  >   |       |  x > 8 | |
-|  >=   |       |  x >= 8 | |
-|  <=   |       |  x <= 8 | |
-
----
-
-## II. Booleans
-So far we've looked at two data types- numbers and strings ("hello!"). As we move into exploring conditional logic, a new type of variable is going to become important: booleans. Booleans store if values are *true* or *false*.
-
 ```javascript
-var a = true;
-var b = false;
+var  address = ["Jenna deBB", "123 Drive", "New Orleans", "LA", 70115];
 ```
----
 
 <a name="ex1"></a>
 <pre>
 <b>Exercise 1:</b>
-On the <a href="https://p5js.org/reference/">reference</a> page under "Events", find
-<b>two built-in variables</b>- one under keyboard and one under mouse- that are booleans.
+1. Create an array of 4 numbers (0 - 100) representing different color hues.
+2. Set the variable hue (below) equal to a randomly selected hue <em>from the array</em>.
+
+Hint: Use [**random()**](https://p5js.org/reference/#/p5/random) function and [**Math.floor()**](http://www.w3schools.com/jsref/jsref_floor.asp) to randomly select one of the items in the array.
 </pre>
 
----
 
-## if / else
+```javascript
 
-Conditional statements are used to give our programs logical flow. We can use conditionals to make an ellipse blue if the mouse is on the left half of the canvas, and red if it's on the right side of the canvas:
+// your array here
 
-```JavaScript
 function setup() {
-    createCanvas(400, 400);
+  createCanvas(400, 400);
+  colorMode(HSB, 100);
 }
 
 function draw() {
 
-   if (mouseX < width/2) {
-      fill(0, 0, 255);
-   }
-   else {
-      fill (255, 0, 0);
-   }
+  var randomNum = Math.floor(random( /* your code here */ ));
+  console.log(randomNum);
 
-   ellipse(width/2, height/2, 100, 100);
+  var hue = // your code here;
 
+  fill(hue, 100, 100);
+  ellipse(mouseX, mouseY, 50, 50);
 }
+```
+
+![alt text](hues.png)
+
+---
+
+
+## II. Loops and Arrays
+
+We can use a for loop and **.length** to iterate through the elements of an array:
+
+```javascript
+var  arr = [1, 3, 4];
+
+for (var i = 0; i < arr.length; i++) {  
+  console.log(arr[i] + "!")      
+}
+
+// 1!
+// 3!
+// 4!
+
+console.log(arr);   // [1, 3, 4]
 ```
 
 ---
@@ -105,40 +119,77 @@ function draw() {
 <a name="ex2"></a>
 <pre>
 <b>Exercise 2:</b>
-Use mouseIsPressed and the text() function in the <a href="https://p5js.org/reference/">reference</a>.
+Create an array representing the heights (in centimeters) of 5 members of a family.
 
-Replicate <a href="https://jennadeboisblanc.github.io/examples/c4e0/">this example</a>.
+Use a for loop to iterate through the array and draw a stick figure (see function below)
+for each member of the family.
 </pre>
 
-[![click me image](images/clickme.png)](https://jennadeboisblanc.github.io/examples/c4e0/)
+```javascript
 
----
+// your array here
 
-## if / else if / else
-
-If we want to write a function printSign() that takes a single argument and that prints whether the value is positive, neither (zero), or negative:
-
-```JavaScript
 function setup() {
-    createCanvas(400, 400);
+  createCanvas(400, 400);
 }
 
 function draw() {
-   printSign(50);
-   printSign(0);
-   printSign(-10);
+
+  // your code here
+
 }
 
-function printSign(val) {
-   if (val > 0) {
-      console.log(val + " is Positive!");
-   }
-   else if (val === 0) {
-      console.log(val + " is Neither!");
-   }
-   else {
-      console.log(val + " is Negative!");
-   }
+function stickFigure(x, personHeight) {
+  personHeight *= 2;  // making stick people 2x the height in pixels
+  fill(150);
+  strokeWeight(3);
+
+  // head
+  noFill();
+  stroke(0);
+  ellipse(x, height-personHeight+personHeight/12, personHeight/6);
+
+  // body
+  fill(0);
+  line(x, height-personHeight+personHeight/6, x, height-personHeight/3);
+
+  // legs
+  line(x-10, height, x, height-personHeight/3);
+  line(x+10, height, x, height-personHeight/3);
+
+  // arms
+  line(x-10, height-personHeight/2, x, height-personHeight/3*2);
+  line(x+10, height-personHeight/2, x, height-personHeight/3*2);
+
+  // height text
+  textWidth(14);
+  strokeWeight(0);
+  text(personHeight/2 + " cm", x-textWidth(personHeight + " cm")/2, height-personHeight -10);
+}
+```
+
+![family pic](images/family.png)
+
+---
+
+## III. Aggregation
+
+We can write a function **sumArray()** that takes an array of arbitrary length as an argument and prints to the console the sum of all of the elements in the array. E.g.:
+
+```javascript
+function setup() {}
+
+function draw() {
+    sumArray([2, 4, 1, 2]);     // should print 9
+    sumArray([2, 1, -5]);       // should print -2
+}
+
+function sumArray(arr) {
+    var sum = 0;
+    for (var i = 0; i < arr.length; i++) {
+        sum += arr[i];
+    }
+    console.log(sum);
 }
 ```
 
@@ -147,55 +198,57 @@ function printSign(val) {
 <a name="ex3"></a>
 <pre>
 <b>Exercise 3:</b>
-Begin by reading the <a href="https://p5js.org/reference/#/p5/keyPressed">keyPressed()</a> reference.
-Write a simple program that changes the location of a rectangle on the screen when
-the arrow keys are pressed. <a href="https://jennadeboisblanc.github.io/examples/c4e1/">Here's an example</a>.
+Write a function, <b>sumEven()</b>, that only adds up the even numbers in an array. It prints this
+sum to the console.
 
-Make sure to:
-1. use the code below
-2. use an if / else if / else statement
+Hint: use the function isEven() in your conditional statement.
 </pre>
 
 ```javascript
-var x = 0;
-var y = 0;
-
-function setup() {
-    createCanvas(400, 400);
-}
+function setup() {}
 
 function draw() {
-    background(150);
-    rect(x, y, 30, 30);
+  sumEven([2, 4, 1, 2]);     // should print 8
+  sumEven([2, 1, -5]);       // should print 2
 }
 
-function keyPressed() {
-    // your code here
+function sumEven(arr) {
+
+  // your code here
+
+}
+
+function isEven(num) {
+  if (num%2 == 0) return true;
+  return false;
 }
 ```
 
 ---
 
-## Multiple Conditions
-We can use [logical operators](https://github.com/robynitp/networkedmedia/wiki/Javascript-Basics#operators) to make compound conditional statements.
 
-For example, we can use the logical "&&" operator to test if x is between -5 **AND** 5:
+## IV. Other array methods
 
-```JavaScript
-// from JavaScript Basics (see link above)
-var x = 1;
-if (x > -5 && x < 5) {
-  // execute some code!
-}
-```
+#### push()
 
-To check if x equals 5 **OR** 3:
+This function adds (pushes) a new element to the end of the array, increasing the length of the array by 1.
 
 ```javascript
-var x = 3;
-if (x === 3 || x === 5) {
-  // execute some code!
-}
+var arr = [30, 10, 0];
+arr.push(200);
+console.log(arr.length);      // 4
+console.log(arr);             // [30, 10, 0, 200]
+```
+
+#### indexOf()
+
+This function returns the index of a given element, or returns -1 if that element isn't found in the array.
+
+```javascript
+var arr = [2, 5, 9];
+var index = arr.indexOf(2);   // 0
+index = arr.indexOf(7);       // -1
+index = arr.indexOf(9);       // 2
 ```
 
 ---
@@ -203,11 +256,54 @@ if (x === 3 || x === 5) {
 <a name="ex4"></a>
 <pre>
 <b>Exercise 4:</b>
-1. Use a compound operator (either || or &&) to write a conditional statement that makes the screen
-blue if the mouse is in the middle third of the canvas, and red otherwise.
-2. Do the same exercise again, only use the operator that you didn't use (either || or &&).
-
-Replicate <a href="https://jennadeboisblanc.github.io/examples/c4e4/">this example</a>.
+Write a function, <b>lookForGold()</b>, that uses indexOf() to determine if "gold" occurs in an
+array. It prints to the console, "GOLD" if so; otherwise, it prints, "Keep digging!"
 </pre>
 
-![thirds](images/thirds.png) -->
+```javascript
+var goldArray = ["dirt", "dirt", "rocks", "dirt", "pebbles", "gold", "dirt", "clay"];
+var rockArray = ["rocks", "dirt", "pebbles", "clay"];
+
+void setup() {
+  lookForGold(goldArray);
+  lookForGold(rockArray);
+}
+
+void draw() { }
+
+// lookForGold() goes here
+
+```
+
+---
+
+
+## IV. Multi-dimensional Arrays
+It's possible in JavaScript to have arrays within arrays. Here is an example of a multi-dimensional array:
+
+```javascript
+var arr = [
+    ["Jenna", "blueberry", "apple"],
+    [1, 2, 3],
+    [true, "Katy Perry", -35.0]
+];
+```
+
+How do we access the elements in this two dimensional array? The same way as before- using square brackets.
+
+```javascript
+console.log(arr[0][1]);     // "blueberry"
+```
+
+---
+
+<a name="ex5"></a>
+<pre>
+<b>Exercise 5:</b>
+How do we access "Katy Perry" in the array above?
+</pre>
+
+---
+
+
+[For more information about multi-dimensional arrays, check out this article.](http://www.dyn-web.com/javascript/arrays/multidimensional.php)

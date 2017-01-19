@@ -7,8 +7,9 @@ Topics
 
 Exercises
 * [Exercise 0. goGreenies()](#ex0)
-* [Exercise 1. madLib()](#ex1)
-* [Exercise 2. multiply()](#ex2)
+* [Exercise 1. arguments and parameters](#ex1)
+* [Exercise 2. madLib()](#ex2)
+* [Exercise 2. multiply()](#ex3)
 
 ---
 
@@ -17,9 +18,9 @@ Functions are important in computer science for:
 * making code easier to read and understand
 * preventing code repetition
 
-*Abstraction* in computer science is the process of organizing complex procedures into discrete, simple units. Writing functions is one example of abstraction at play: by grouping lines of code under the heading of a function name, we abstract away some of the complexity of code.
+*Abstraction* in computer science is the process of organizing complex code into discrete, simple units. Writing functions is one example of abstraction at play: by grouping lines of code under the heading of a function name, we reduce the complexity of our program and make it easier to understand.
 
-As an example, the function **newmanColors()** is an easy way to designate that we'll apply Newman colors to shapes. It sets the stroke to Newman green and the fill to white.
+As an example, the function **newmanColors()** is an easy way to designate that we'll apply Newman colors to shapes (as opposed to **jesuitColors()** which might apply blue colors). The Newman function sets the stroke to Newman green and the fill to white:
 
 ```javascript
 function setup() {
@@ -34,6 +35,31 @@ function draw() {
 function newmanColors() {
     stroke(0, 255, 0);
     fill(255);
+}
+
+
+```
+
+**OVERVIEW for declaring and calling functions**
+
+* We declare functions by typing:
+
+  1. `function` followed by the
+  2. `myFunctionName` (such as newmanColors)
+  3. `()` parentheses
+  4. `{` open curly bracket
+  5. the body of the function (`stroke(...` etc. in the example above)
+  6. `}` close curly bracket to end the function declaration
+
+* Once our function is *declared*, then we need to actually use it, or *call it*. Since the browser is only looking for code in the setup() and the draw(), we call the function in the draw():
+
+```javascript
+// ... some other code
+
+function draw() {
+    newmanColors();
+
+    // ... some more code
 }
 ```
 
@@ -60,7 +86,12 @@ function draw() {
 ---
 
 ## II. Passing Arguments
-To pass arguments to functions, we must declare **parameters** (the variables in the parentheses of the function definition). For example, to pass two variables to the function **add()**:
+
+Passing data to functions is very important in programming. Let's say we want to write a function, **greeting()** that can alert us with "Hello, [name]" where we can pass in a value for name.
+
+We can pass values to functions by
+* passing values in parentheses when we call the function (`greeting("Jenna");`).
+* put variable names in the parentheses when we declare the function (`function greeting(name) { ...`);
 
 ```javascript
 function setup() {
@@ -68,11 +99,31 @@ function setup() {
 }
 
 function draw() {
-    add(100, 20);   // 100 and 20 are arguments
+    greeting("Jenna");   
 }
 
-function add(val1, val2) {  // val1 and val2 are parameters
-    console.log(val1 + val2);
+function greeting(name) {
+  alert("Hello, " + name);
+}
+```
+
+**NOTE**
+* Function **parameters** are the items listed in the function definition (`name`).
+* Function **arguments** are the real values passed to (and received by) the function (`"Jenna"`).
+
+It's possible to pass multiple arguments to a function. We do this by separating the values with parentheses:
+
+```javascript
+function setup() {
+  createCanvas(400, 400);
+}
+
+function draw() {
+  greeting("Jenna", "deBoisblanc");   
+}
+
+function greeting(firstName, lastName) {
+  alert("Hello, " + firstName + " " + lastName);
 }
 ```
 
@@ -81,6 +132,12 @@ function add(val1, val2) {  // val1 and val2 are parameters
 <a name="ex1"></a>
 <pre>
 <b>Exercise 1:</b>
+In the example above, what are the arguments? The parameters?
+</pre>
+
+<a name="ex2"></a>
+<pre>
+<b>Exercise 2:</b>
 Write a function <b>madLib()</b> that takes 4 strings as arguments (noun, adjective, verb, noun), creates a story, and prints the story to the console.
 </pre>
 
@@ -104,7 +161,7 @@ function draw() {
 
 We can use *return* to specify that functions should store a value in memory after they are called. Returning values is useful if you'd like a function to perform a calculation and use that calculation in your code.
 
-For example, instead of printing the sum of two values, we can define our **add()** function to return the sum:
+For example, we can define our **add()** function to *return* the sum:
 
 ```javascript
 function setup() {
@@ -123,12 +180,12 @@ function add(val1, val2) {
 
 ---
 
-<a name="ex2"></a>
+<a name="ex3"></a>
 <pre>
-<b>Exercise 2:</b>
+<b>Exercise 3:</b>
 Write a function <b>multiply()</b> that has two parameters and <em>returns</em> their product.
-Use the <b>multiply()</b> function inside of the text() function to
-display the product of two values on the canvas.
+Use the <b>multiply()</b> function inside of the text() function to display the product of two
+values on the canvas.
 
 </pre>
 
@@ -142,7 +199,7 @@ function draw() {
     var v1 = 5;
     var v2 = 3;
     text(v1 + " * " + v2 + " = ", 100, 80);
-    text( /* code goes here */ );
+    text( /* code goes here */ , 150, 80);
 }
 
 // define multiply function here

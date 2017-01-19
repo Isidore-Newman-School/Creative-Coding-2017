@@ -2,8 +2,8 @@
 
 Topics
 * [I. Built-in variables](#i-built-in-variables)
-* [II. The "+" Operator](#ii-the--operator)
-* [III. Other Operators](#iii-other-operators)
+* [II. Operators](#ii-operators)
+* [III. Variable Scope](#iii-variable-scope)
 
 Exercises
 * [Exercise 0. background()](#ex0)
@@ -62,7 +62,7 @@ Ask Ms. deBB if you need hints.
 
 ---
 
-## II. The "+" Operator
+## II. Operators
 
 So far we've only looked at variables that are numbers. Strings are variables that store text.
 
@@ -71,7 +71,7 @@ var firstName = "Jenna";
 var lastName = "deBoisblanc";
 ```
 
-Just like with numbers, we can use the "+" operator on strings. In this case, the operator *concatenates* the strings.
+Just like with numbers, we can use the "+" operator on strings. In this case, the addition operator *concatenates* the strings.
 
 ```javascript
 var firstName = "Jenna";
@@ -109,7 +109,6 @@ console.log("7" + (7 + 7));     // 4. what is the output?
 ```
 ---
 
-## III. Other Operators
 Check out some of the other math operators in [JavaScript Basics](https://github.com/robynitp/networkedmedia/wiki/Javascript-Basics).
 
 We will go over some of the more common operators, beginning with the "=" or "assignment" operator. Unlike in math, the following statement is valid:
@@ -121,7 +120,7 @@ console.log(x);
 ```
 We are NOT saying "x is *equal to* x + 5," because that is invalid. Rather, we are "*assigning*" the value of x plus 5 (which happens to equal 8) to the variable x. Subtle difference.
 
-The following code is shorthand for `x = x + 5`:
+The following code is shorthand for `x = x + 5`, or *add 5 to the existing value of x*:
 
 ```javascript
 x += 5;
@@ -131,17 +130,24 @@ There are several other operators that work in the same way:
 
 ```javascript
 var x = 10;
-x -= 8;        // x = 2
-x *= 3;        // x = 6
-x /= 2;        // x = 3
+x -= 8;        // x = 2 (subtract 8 from the existing value of x)
+
+var x = 10;
+x *= 3;        // x = 30 (multiply the existing value of x times 3)
+
+
+var x = 10;
+x /= 2;        // x = 5  (divide the existing value of x by 2)
 ```
 
 The following code is shorthand for `x = x+1` and `x = x-1` respectively:
 
 ```javascript
 var x = 5;
-x++;        // x = 6
-x--;        // x = 6
+x++;        // x = 6 (increment x by 1)
+
+var x = 5;
+x--;        // x = 4 (decrement x by 1)
 ```
 
 ---
@@ -162,3 +168,57 @@ x *= 2;                 // 3. x = ?
 y++;                    // 4. y = ?
 console.log(x + "6" + (x + y));     // 5.  = ?   
 ```
+
+---
+
+## III. Variable Scope
+In JavaScript, "scope" is the set of variables, objects, and functions that you can access. JavaScript has two scopes:
+
+1. **global scope** - global variables are declared *outside of functions* (i.e. at the top) and are therefore available to be used *anywhere* in your sketch. Notice that `a` is logged in both the `setup()` and `loop()`.
+
+  ```javascript
+  var a = 10;     // global variable
+
+  function setup() {
+    console.log(a)      // 10
+    a = 5;
+  }
+
+  function draw() {
+    console.log(a);     // 5
+  }
+  ```
+
+2. **local (or function) scope** - local variables are declared *inside of functions* (which is why it's also function scope). These variables are only available to be used in the function where they are declared.
+
+  ```javascript
+  function setup() {
+    var a = 5;        // local variable
+    console.log(a);   // 5
+  }
+
+  function draw() {
+    console.log(a);   // undefined
+  }
+  ```
+
+
+**NOTE** It is good programming process to *avoid the use of global variables* if you can.
+
+---
+
+<a name="ex4"></a>
+<pre>
+<b>Exercise 4:</b>
+Check out <a href="http://stackoverflow.com/questions/10525582/why-are-global-variables-considered-bad-practice">this question on Stack Overflow</a> and write two reasons why you should avoid
+global variables.
+
+
+1.
+
+
+2.
+
+
+
+</pre>
