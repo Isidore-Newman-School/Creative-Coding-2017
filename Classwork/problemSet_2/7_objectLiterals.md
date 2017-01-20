@@ -227,11 +227,11 @@ function setup() {
 <a name="ex3"></a>
 <pre>
 <b>Exercise 3:</b>
-Write a method, <b>sustainHit()</b>, that has a parameter- hitAmount. When this method is called,
-decrease the pokemon's hp (measure of its health) by the hitAmount. If the health is less than 0, print
-to the console, "pokemon is dead."
+Write a method, <b>attack()</b>. When this method is called, the Pokemon's name and attack stat are printed
+to the console. For example:
 
-Call this method in the setup twice- each time with a hitAmount of 30.
+"[insert name] has an attack power of [insert attack stat]."
+
 </pre>
 
 ```javascript

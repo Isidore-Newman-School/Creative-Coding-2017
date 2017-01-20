@@ -1,36 +1,31 @@
 # 8. Object Constructors
 
 Topics
-* [I. Built-in variables](#i-built-in-variables)
-* [II. Operators](#ii-operators)
-* [III. Variable Scope](#iii-variable-scope)
+* [I. Object Constructors](#i-object-constructors)
+* [II. Passing Values to Object Constructors](#ii-passing-values-to-object-constructors)
+* [III. Methods in Object Constructors](#iii-methods-in-object-constructors)
+* [IV. Arrays of Objects](#iv-arrays-of-objects)
 
 Exercises
-* [Exercise 0. background()](#ex0)
+* [Exercise 0. new Bubbles](#ex0)
 * [Exercise 1. mouseX and mouseY](#ex1)
-* [Exercise 2. Concatenation](#ex2)
-* [Exercise 3. Operators](#ex3)
+* [Exercise 2. Pokemon()](#ex2)
+* [Exercise 3. sustainHit()](#ex3)
+* [Exercise 4. Tacos](#ex3)
 
 ---
 
 ## I. Object Constructors
-Sometimes we want to create many different objects quickly and easily. This is where object constructors come in. Unlike object literals, object constructors are functions that can be called multiple times to make multiple copies or "instances" of the object.
+Sometimes we want to create many different objects quickly and easily. This is where object constructors come in. Unlike object literals, object constructors are functions that can be called multiple times to make multiple copies or "instances" of the object. You can think of an object constructor as an object *literal* factory.
+
+**NOTE** by convention object constructors are capitalized, e.g. `Bubble()`
+
+For example, to create a bubble object constructor that randomly assigns x, y, and diameter values when the constructor is called:
 
 ```javascript
-// declare bubbles
-var bubble0;
-var bubble1;
+function setup() { }
 
-function setup() {
-  // create bubbles
-  bubble0 = new bubble();
-  bubble1 = new bubble();
-}
-
-function draw() {
-  ellipse(bubble0.x, bubble0.y, bubble0.diameter);
-  ellipse(bubble1.x, bubble1.y, bubble1.diameter);
-}
+function draw() { }
 
 // bubble constructor
 function Bubble() {
@@ -38,17 +33,15 @@ function Bubble() {
   this.y = random(0, height);
   this.diameter = random(10, 30);
 }
-
 ```
-
 
 #### new Keyword
 Now that we have an object constructor, let's use it to create some bubbles.
 
-1. Declare empty variables above the setup() so that our bubbles have [global scope](../problemSet_0/2_variables.md)
-We create copies of the objects by calling the constructor with the **new** keyword.
+1. Declare empty variables above the setup() so that our bubbles have [global scope](../problemSet_0/2_variables.md#iii-variable-scope)
+2. Set these variables equal to bubble objects by calling the `Bubble()` constructor with the **new** keyword
 
-For example, to create two bubbles with random positions and diameters:
+Once the bubbles are created, we can draw them by getting their coordinates with dot notation:
 
 ```javascript
 // declare bubbles
@@ -57,11 +50,12 @@ var bubble1;
 
 function setup() {
   // create bubbles
-  bubble0 = new bubble();
-  bubble1 = new bubble();
+  bubble0 = new Bubble();
+  bubble1 = new Bubble();
 }
 
 function draw() {
+  background(255);
   ellipse(bubble0.x, bubble0.y, bubble0.diameter);
   ellipse(bubble1.x, bubble1.y, bubble1.diameter);
 }
@@ -104,6 +98,7 @@ function setup() {
 }
 
 function draw() {
+  background(255);
   ellipse(bubble0.x, bubble0.y, bubble0.diameter);
   ellipse(bubble1.x, bubble1.y, bubble1.diameter);
 }
@@ -114,11 +109,53 @@ function Bubble(x, y, diameter) {
   this.y = y;
   this.diameter = diameter;
 }
-
 ```
 
+---
 
-## II. Methods in Object Constructors
+<a name="ex1"></a>
+<pre>
+<b>Exercise 1:</b>
+1. Add a fourth parameter to the Bubble object constructor: isPopped (boolean).
+2. Set the isPopped field equal to the parameter
+3. Account for this new parameter when you create the bubbles
+4. Only draw the bubbles if they are not popped.
+</pre>
+
+
+```javascript
+var bubble0;
+var bubble1;
+
+function setup() {
+  bubble0 = new bubble(100, 200, 50, /* your code here */ );
+  bubble1 = new bubble(200, 200, 100, /* your code here */ );
+}
+
+function draw() {
+  background(255);
+
+  // only draw them if they are not popped
+  if (bubble0.isPopped == false) {
+    ellipse(bubble0.x, bubble0.y, bubble0.diameter);
+  }
+  if (bubble1.isPopped == false) {
+    ellipse(bubble1.x, bubble1.y, bubble1.diameter);
+  }
+}
+
+// bubble constructor with parameters
+function Bubble(x, y, diameter /* your code here */ ) {
+  this.x = x;
+  this.y = y;
+  this.diameter = diameter;
+
+  // code here
+}
+```
+---
+
+## III. Methods in Object Constructors
 Now let's add a *method* **display()** that draws the bubble at the current x and y values.
 
 1. When we declare the method below, we have to use the *this* keyword in order to specify the x and y that are specific to **this** particular bubble.
@@ -132,11 +169,12 @@ var bubble1;
 function setup() {
   createCanvas(400, 400);
   // create bubbles
-  bubble0 = new bubble();
-  bubble1 = new bubble();
+  bubble0 = new Bubble();
+  bubble1 = new Bubble();
 }
 
 function draw() {
+  background(255);
   bubble0.display();
   bubble1.display();
 }
@@ -154,6 +192,45 @@ function Bubble() {
 
 ```
 
+Now let's add a **move()** method that adds a random number to the x and y coordinates every time the method is called.
+
+```javascript
+// declare bubbles
+var bubble0;
+var bubble1;
+
+function setup() {
+  createCanvas(400, 400);
+  // create bubbles
+  bubble0 = new Bubble();
+  bubble1 = new Bubble();
+}
+
+function draw() {
+  background(255);
+  bubble0.display();
+  bubble1.display();
+  bubble0.move();
+  bubble1.move();
+}
+
+// bubble constructor
+function Bubble() {
+  this.x = random(0, width);
+  this.y = random(0, height);
+  this.diameter = random(10, 30);
+
+  this.display = function() {
+    ellipse(this.x, this.y, this.diameter, this.diameter);
+  };
+
+  this.move = function() {
+    this.x += random(-5, 5);
+    this.y += random(-5, 5);
+  };
+}
+```
+---
 
 <a name="ex2"></a>
 <pre>
@@ -181,13 +258,82 @@ function Pokemon(name, hp, bestMove) {
 }
 ```
 
----
+<a name="ex3"></a>
+<pre>
+<b>Exercise 3:</b>
+Add a method to the Pokemon object constructor, <b>sustainHit()</b>, that has a parameter- hitAmount.
+1. When this method is called, decrease the pokemon's hp (measure of its health) by the hitAmount.
+2. If the health is less than 0, print to the console, "[insert name] is dead."
 
-**(4)** Now add a **move()** method to the object that increments the x value by 1 if movingPositive is true; otherwise, it decrements x by 1. If the ball reaches the edge, the value of movingPositive is flipped so that the ball begins to move in the opposite direction. Test out this method in the draw function.
+</pre>
+
 
 ```javascript
-function draw() {
-  ball.display();
-  ball.move();
+var pokemon;
+
+function setup() {
+  pokemon = // create a new object here with object constructor
+
+  pokemon.sustainHit(30);
+  pokemon.sustainHit(200);
 }
+
+
+function Pokemon(name, hp, bestMove) {
+  // define object constructor fields here
+
+  // sustainHit() method goes here
+}
+```
+
+
+## IV. Arrays of Objects
+As we've seen, objects can contain arrays as a property, but the reverse is also true! Sometimes we want to keep track of an ordered list of objects, which is where arrays come in handy.
+
+Let's create an object constructor for a taco object, and then let's add 10 tacos to an array called "tacos".
+
+```javascript
+var tacos = [];
+
+function setup() {
+  createCanvas(600, 600);
+  for (var i = 0; i < 10; i++) {
+    tacos[i] = new Taco("pork");
+  }
+  console.log(tacos);
+}
+
+function draw() {
+  background(255);
+
+}
+
+function Taco(type) {
+  this.type = type;
+
+  this.x = random(0, width);
+  this.y = random(0, height);
+
+  this.display = function() {
+    fill(255, 255, 0);
+    arc(this.x, this.y, 80, 80, 0, PI+QUARTER_PI, CHORD);
+    fill(0);
+    text(this.type, this.x, this.y);
+  }
+}
+```
+
+---
+
+<a name="ex4"></a>
+<pre>
+<b>Exercise 4:</b>
+1. In the example above, begin by calling display() for all of the taco objects in the draw().
+
+2. The only type of taco in the tacos[] array will be "pork." How can we use the array,
+  tacoTypes[] (below) to quickly create 10 different types of tacos?
+</pre>
+
+```javascript
+var tacoTypes = ["pork", "chicken", "bean", "shrimp", "fish", "carnitas", "cheese", "beef", "vegetable", "breakfast"];
 ```
