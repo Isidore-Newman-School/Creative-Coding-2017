@@ -11,7 +11,7 @@ Exercises
 * [Exercise 1. Bubble isPopped?](#ex1)
 * [Exercise 2. Pokemon()](#ex2)
 * [Exercise 3. sustainHit()](#ex3)
-* [Exercise 4. Tacos](#ex3)
+* [Exercise 4. Tacos](#ex4)
 
 ---
 
