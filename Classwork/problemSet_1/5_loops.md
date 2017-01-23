@@ -117,7 +117,7 @@ In the previous example, why did we divide i/4 in the stroke?
 
 ## II. Nested Loops
 
-It's possible to use loops inside of loops. Lets create 10 rows (by incrementing variable i) and 10 columns (by incrementing variable j) of ellipses. We'll change the RGB by i and j.
+It's possible to use loops inside of loops. Let's create 10 rows (by incrementing variable i) and 10 columns (by incrementing variable j) of ellipses. We'll change the RGB by i and j.
 
 ```c++
 function setup() {

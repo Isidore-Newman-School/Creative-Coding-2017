@@ -22,7 +22,7 @@ function draw() {
   // bounceEllipse();
 
   // Exercise 2
-  // doubleRainbow();
+  // concentricEllipses();
 
   // Exercise 3
   // fooBarFizz();
@@ -32,7 +32,7 @@ function draw() {
 
 // Exercise 1 - bounceEllipse()
 
-// Exercise 2 - doubleRainbow()
+// Exercise 2 - concentricEllipses()
 
 // Exercise 3 - fooBarFizz()
 

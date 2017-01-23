@@ -60,7 +60,7 @@ function bounceEllipse() {
 
 ## Loops
 
-**(2)** Fill out the function, **doubleRainbow()**. Use a single for loop to create the following image:
+**(2)** Fill out the function, **concentricEllipses()**. Use a single for loop to create the following image:
 
 ```javascript
 function setup() {
@@ -69,15 +69,15 @@ function setup() {
 }
 
 function draw() {
-  doubleRainbow();
+  concentricEllipses();
 }
 
-function doubleRainbow() {
+function concentricEllipses() {
   // your code here
 }
 ```
 
-  ![alt text](images/doubleRainbow.png)
+  ![alt text](images/hw0_2_loops.png)
 
 
 **(3)** In computer science the "%" (a.k.a. the modulo operator) is surprisingly useful. It is used to calculate the remainder after dividing the first number from the second. E.g.:
