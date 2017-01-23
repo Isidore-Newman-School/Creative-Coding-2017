@@ -25,7 +25,7 @@ function draw() {
   // concentricEllipses();
 
   // Exercise 3
-  // fooBarFizz();
+  // fooBarFuzz();
 }
 
 // Exercise 0 - didGreeniesWin()
@@ -34,6 +34,6 @@ function draw() {
 
 // Exercise 2 - concentricEllipses()
 
-// Exercise 3 - fooBarFizz()
+// Exercise 3 - fooBarFuzz()
 
 ```

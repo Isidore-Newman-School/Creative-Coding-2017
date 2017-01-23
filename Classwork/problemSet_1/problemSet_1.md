@@ -102,7 +102,8 @@ else {
 }
 ```
 
-Using the example above, write a function, **fooBarFizz()**, that uses a for loop to iterate from 1 to 20. For each iteration, it prints the number and:
+Using the example above, write a function, **fooBarFuzz()**, that uses a for loop to iterate from 1 to 20. For each iteration, it prints the number and:
+
 1. if the number is divisible by 2, print "foo"
 2. if the number is divisible by 3, print "bar"
 3. if the number is divisible by both 2 and 3, print "fuzz"
@@ -125,10 +126,10 @@ function setup() {
 }
 
 function draw() {
-  fooBarFizz();
+  fooBarFuzz();
 }
 
-function fooBarFizz() {
+function fooBarFuzz() {
   // your code here
 }
 ```
