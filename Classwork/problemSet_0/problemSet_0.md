@@ -51,7 +51,7 @@ bandNameGenerator("Barking", "waffles", 1999, 2017);
 
 ## Returning Functions
 
-**(2)** Look up the random() function and the Math.floor(). Write a function **getDiceRoll()** that returns a random number 1-6 (must be an integer).
+**(2)** Look up the random() and floor() functions in the p5 reference. Write a function **getDiceRoll()** that returns a random number 1-6 (must be an integer).
 
 ## Challenge
 

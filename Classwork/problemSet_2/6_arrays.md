@@ -66,7 +66,7 @@ var  address = ["Jenna deBB", "123 Drive", "New Orleans", "LA", 70115];
 1. Create an array of 4 numbers (0 - 100) representing different color hues.
 2. Set the variable hue (below) equal to a randomly selected hue <em>from the array</em>.
 
-Hint: Use <a href="https://p5js.org/reference/#/p5/random"><b>random()</b></a> function and <a href="http://www.w3schools.com/jsref/jsref_floor.asp"><b>Math.floor()</b></a> to randomly
+Hint: Use <a href="https://p5js.org/reference/#/p5/random"><b>random()</b></a> function and <a href="https://p5js.org/reference/#/p5/floor"><b>floor()</b></a> to randomly
 select one of the items in the array.
 </pre>
 
@@ -82,7 +82,7 @@ function setup() {
 
 function draw() {
 
-  var randomNum = Math.floor(random( /* your code here */ ));
+  var randomNum = floor(random( /* your code here */ ));
   console.log(randomNum);
 
   var hue = // your code here;

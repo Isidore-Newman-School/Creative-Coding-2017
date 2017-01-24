@@ -162,22 +162,52 @@ function draw() {
 
 ## III. Returning Values
 
-We can use *return* to specify that functions should store a value in memory after they are called. Returning values is useful if you'd like a function to perform a calculation and use that calculation in your code.
+So far we've only looked at functions that execute code, but they do not *return* or resolve into values. Now we're going to look at functions that do a calculation and *return* a value. We can use the keyword *return* to specify that functions should store a value in memory after they are called. Returning values is useful if you'd like a function to perform a calculation and use that calculation in your code.
 
-For example, we can define our **add()** function to *return* the sum:
+
+**Step 1.** Use *return* keyword when you have a value that you'd like the function to return.
+
+```javascript
+function add(val1, val2) {
+    return val1 + val2;
+}
+```
+
+**Step 2.** When we call add(), we can set a variable *sum* equal to the function add() because add() returns a value:
 
 ```javascript
 function setup() {
-    createCanvas(400, 400);
-}
-
-function draw() {
     var sum = add(100, 20);   // we can set sum equal to add() b/c it returns a value
     console.log(sum);
 }
 
+function draw() { }
+
 function add(val1, val2) {
-    return(val1 + val2);
+    return val1 + val2;
+}
+```
+
+As another example, let's write a function **getCircleArea()** that has a parameter (radius) and *returns* the area of the circle.
+
+```javascript
+function getCircleArea(r) {
+    return r * r * Math.PI;
+}
+```
+
+Now let's call the function and print the result to the console.
+
+```javascript
+function setup() {
+  console.log(getCircleArea(3));
+  console.log(getCircleArea(5));
+}
+
+function draw() { }
+
+function getCircleArea(r) {
+    return r * r * Math.PI;
 }
 ```
 
