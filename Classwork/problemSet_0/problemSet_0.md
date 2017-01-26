@@ -18,23 +18,25 @@ Problem sets should be completed **individually**, but *if you have questions, d
 
 ## Variables
 
-**(0)** In the following code, what is printed to the console? For the quiz, be prepared to answer this type of question with pencil and paper.
+**(0)- 6pts** Fill out the comments below to specify what x and y equal at each line.
 
-(Pro tip: keep track of the x and y values at each line of code)
+For the quiz, be prepared to answer this type of question with pencil and paper.
 
 ```javascript
-var x = 2;
+var x = 2;  
 var y = 3;
-x = (x * 3) - y;
-y = x + x;
-x--;
-y++;
-console.log(x + y);
+var z = 5;
+z *= 3;                 // z =
+x = (x * 3) - y;        // x =
+y = x + x;              // y =
+x--;                    // x =
+y += z;                 // y =
+console.log(y - x + z); // what is printed to console?
 ```
 
 ## Function arguments / parameters
 
-**(1)** Write a function, **bandNameGenerator()**, that takes 4 arguments:
+**(1)- 10pts** Write a function, **bandNameGenerator()**, that takes 4 arguments:
 1. participle (e.g. "running", "sliding", etc.)
 2. plural noun
 3. band founding date
@@ -51,11 +53,11 @@ bandNameGenerator("Barking", "waffles", 1999, 2017);
 
 ## Returning Functions
 
-**(2)** Look up the random() and floor() functions in the p5 reference. Write a function **getDiceRoll()** that returns a random number 1-6 (must be an integer).
+**(2)- 10pts** Look up the random() and floor() functions in the p5 reference. Write a function **getDiceRoll()** that returns a random number 1-6 (including 6, must be an integer).
 
 ## Challenge
 
-**(3)** Write a function, colorLines(), that creates [this effect](https://jennadeboisblanc.github.io/examples/ps0/index.html).
+**(3)- 15pts** Write a function, colorLines(), that creates [this effect](https://jennadeboisblanc.github.io/examples/ps0/index.html).
 
 ![alt text](images/rainline.png)
 

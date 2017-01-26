@@ -5,8 +5,17 @@ You can comment/ uncomment certain sections to test code by highlighting the are
 
 ```javascript
 // Exercise 0
-// int x =
-
+/*
+  var x = 2;  
+  var y = 3;
+  var z = 5;
+  z *= 3;                 // z =
+  x = (x * 3) - y;        // x =
+  y = x + x;              // y =
+  x--;                    // x =
+  y += z;                 // y =
+  console.log(y - x + z); // what is printed to console?
+*/
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
