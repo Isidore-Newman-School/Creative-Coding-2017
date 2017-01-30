@@ -45,7 +45,8 @@ function draw() {
 <a name="ex0"></a>
 <pre>
 <b>Exercise 0:</b>
-randTempFahrenheit is a variable that is randomly set to a temperature between -25 and 110 degrees Fahrenheit.
+randTempFahrenheit is a variable that is randomly set to a temperature between -25 and 110 degrees
+Fahrenheit.
 
 Write a function, <b>hotOrCold()</b>, that sets the background to blue if the temperature is cold or red if the
 temperature is hot (you can determine that temp threshold).   
@@ -257,4 +258,4 @@ blue if the mouse is in the middle third of the canvas, and red otherwise.
 Replicate <a href="https://jennadeboisblanc.github.io/examples/c4e4/">this example</a>.
 </pre>
 
-![thirds](images/thirds.png)
+[![thirds](images/thirds.png)](https://jennadeboisblanc.github.io/examples/c4e4/)
