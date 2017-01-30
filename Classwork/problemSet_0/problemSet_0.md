@@ -53,9 +53,9 @@ bandNameGenerator("Barking", "waffles", 1999, 2017);
 
 ## Returning Functions
 
-**(2)- 10pts** Look up the random() and floor() functions in the p5 reference. Write a function **getDiceRoll()** that returns a random number 1-6 (including 6, must be an integer).
+**(2)- 10pts** Look up the random() and floor() functions in the p5 reference. Write a function **getDiceRoll()** that *returns* a random number 1-6 (including 6, must be an integer).
 
-## Challenge
+## Other Functions
 
 **(3)- 15pts** Write a function, colorLines(), that creates [this effect](https://jennadeboisblanc.github.io/examples/ps0/index.html).
 

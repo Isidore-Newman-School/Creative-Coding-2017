@@ -10,6 +10,7 @@ Exercises
 * [Exercise 1. mouseX and mouseY](#ex1)
 * [Exercise 2. Concatenation](#ex2)
 * [Exercise 3. Operators](#ex3)
+* [Exercise 4. Scope](#ex4)
 
 ---
 
@@ -210,15 +211,37 @@ In JavaScript, "scope" is the set of variables, objects, and functions that you 
 <a name="ex4"></a>
 <pre>
 <b>Exercise 4:</b>
-Check out <a href="http://stackoverflow.com/questions/10525582/why-are-global-variables-considered-bad-practice">this question on Stack Overflow</a> and write two reasons why you should avoid
-global variables.
-
-
-1.
-
-
-2.
-
-
-
+Fill in the comments below:
 </pre>
+
+```javascript
+var x = 10;           // global or local?
+
+function setup() {
+  var y = 3;          // global or local?
+  console.log(x);     // what do x, y, and z equal?
+  console.log(y);
+  console.log(z);
+  doStuff();
+  console.log(x);     // what do x, y, and z equal?
+  console.log(y);
+  console.log(z);
+
+}
+
+function draw() {
+  console.log(x);     // what do x, y, and z equal?
+  console.log(y);
+  console.log(z);
+}
+
+function doStuff() {
+  var z = 5;          // global or local?
+  x = z;              // global or local?
+  var y = z;          // global or local?
+
+  console.log(x);     // what do x, y, and z equal?
+  console.log(y);
+  console.log(z);
+}
+```

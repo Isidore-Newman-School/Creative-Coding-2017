@@ -141,7 +141,8 @@ In the example above, what are the arguments? The parameters?
 <a name="ex2"></a>
 <pre>
 <b>Exercise 2:</b>
-Write a function <b>madLib()</b> that takes 4 strings as arguments (noun, adjective, verb, noun), creates a story, and prints the story to the console.
+Write a function <b>madLib()</b> that takes 4 strings as arguments (noun, adjective, verb, noun),
+creates a story, and prints the story to the console.
 </pre>
 
 ```javascript
