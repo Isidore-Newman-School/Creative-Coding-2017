@@ -11,6 +11,7 @@ Exercises
 * [Exercise 2. Gradient](#ex2)
 * [Exercise 3. Nested Loop](#ex3)
 * [Exercise 4. While Loop](#ex4)
+
 ---
 
 ## I. For Loops
