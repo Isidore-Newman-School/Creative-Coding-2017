@@ -103,7 +103,7 @@ function draw() {
 }
 ```
 
-![alt text](rainbowgrad4.png)
+![alt text](images/rainbowgrad4.png)
 
 ---
 
