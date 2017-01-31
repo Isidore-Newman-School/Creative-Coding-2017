@@ -111,7 +111,7 @@ function draw() {
 <a name="ex2"></a>
 <pre>
 <b>Exercise 2:</b>
-In the previous example, why did we divide i/4 in the stroke?
+Modify the code above so that the background is a gradient from red to green- not the entire rainbow.
 </pre>
 
 ---
