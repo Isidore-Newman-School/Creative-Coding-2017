@@ -73,47 +73,62 @@ Hint: fill(0) is black and fill(255) is white...
 
 ---
 
-#### Gradient with colorMode()
+#### Conditionals with Loops
 
-Let's do something a little more fancy. Let's make a rainbow gradient! We'll use [**colorMode(HSB, 1)**](http://p5js.org/reference/#/p5/colorMode) to switch from a RGB color scale to a HSB (hue, saturation, brightness) scale.
-
-The advantage of this scale is that we can adjust the value of the hue while keeping saturation and brightness constant in order to cycle through the colors of the rainbow.
-
-*NOTE*: The second argument of colorMode() (100 in the example below), sets the max value of the range of number the function accepts. So in the example below, instead of a range of 0-255, the color scale will be out of 0-100.
+Let's write a function, **luckyEllipse()** draws 20 ellipses. Each time an ellipse is drawn, the function checks if a randomly-generated number is either 1 or 0. If it's 0, the ellipse is green; otherwise, the ellipse is red.
 
 ```javascript
-colorMode(HSB, 100);
-// fill(0, 100, 100);   -> red at full brightness and saturation
-// fill(10, 100, 100);  -> orange at full brightness and saturation
-// fill(20, 100, 100);  -> yellow at full brightness and saturation
-// ...
-// fill(100, 100, 100);  -> pink at full brightness and saturation
-```
 
-```javascript
 function setup() {
   createCanvas(400, 400);
-  colorMode(HSB, 100);  
+
+  luckyEllipse();
 }
 
-function draw() {
-  for (var i = 0; i < width; i++) {
-     stroke(i/4, 100, 100);
-     line(i, 0, i, height)
-  }
+function draw() { }
+
+function luckyEllipse() {
+  for (var i = 0; i < 20; i++) {
+    var num = floor(random(0,2));
+    if(num === 0) {
+      fill(0, 255, 0);
+    }
+    else {
+      fill(255, 0, 0);
+    }
+     ellipse(i * 20, width/2, 20, 20);
+  }  
 }
 ```
-
-![alt text](images/rainbowgrad4.png)
 
 ---
 
 <a name="ex2"></a>
 <pre>
 <b>Exercise 2:</b>
-Modify the code above so that the background is a gradient from red to green- not the entire rainbow.
+If mouseIsPressed, draw a rainbow gradient (see code below). Otherwise, draw a gradient from red to green.
 </pre>
 
+
+```javascript
+function setup() {
+  createCanvas(400, 400);
+  colorMode(HSB, width);  
+}
+
+function draw() {
+
+  // code goes here
+
+}
+
+function drawRainbowGradient() {
+  for (var i = 0; i < width; i++) {
+     stroke(i, width, width);
+     line(i, 0, i, height)
+  }
+}
+```
 ---
 
 ## II. Nested Loops
