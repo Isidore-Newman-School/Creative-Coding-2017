@@ -6,11 +6,11 @@ Topics
 * [III. While Loops](#iii-while-loops)
 
 Exercises
-* [Exercise 0. For Loop](#ex0)
-* [Exercise 1. Diagonal Loop](#ex1)
-* [Exercise 2. Gradient](#ex2)
-* [Exercise 3. Nested Loop](#ex3)
-* [Exercise 4. While Loop](#ex4)
+* [Exercise 0](#ex0)
+* [Exercise 1](#ex1)
+* [Exercise 2](#ex2)
+* [Exercise 3](#ex3)
+* [Exercise 4](#ex4)
 
 ---
 
