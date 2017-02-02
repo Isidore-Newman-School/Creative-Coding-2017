@@ -19,7 +19,8 @@ function setup() {
 
 function draw() {
   // Exercise 0
-  // didGreeniesWin("Pope John Paul II", 21, 14);
+  // didGreeniesWin("Country Day", 999, 0);
+  // didGreeniesWin("Pope John Paul II", 21, 21);
   // didGreeniesWin("Jesuit", 3, 40);
 
   // Exercise 1
