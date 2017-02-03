@@ -2,7 +2,7 @@
 
 In Project 1 students will demonstrate proficiency with JavaScript fundamentals and the p5.js library by developing interactive, single-page websites. Students can draw inspiration from sites such as:
 
-* [The p5 gallery](https://p5js.org/gallery/)
+* [Processing gallery](http://processingjs.org/exhibition/)
 * The bizarre (and usually funny) site, [theuselessweb.com](https://theuselessweb.com)
 * [100 Days of Click Art](http://leslieruckman.tumblr.com/)
 * [Previous "Creative Coding" classes](https://isidore-newman-school.github.io/cc2016F.html)
