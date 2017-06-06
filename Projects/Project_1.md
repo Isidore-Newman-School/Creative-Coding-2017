@@ -1,4 +1,4 @@
-#Project 1: p5.js Interactivity
+# Project 1: p5.js Interactivity
 
 In Project 1 students will demonstrate proficiency with JavaScript fundamentals and the p5.js library by developing interactive, single-page websites. Students can draw inspiration from sites such as:
 
