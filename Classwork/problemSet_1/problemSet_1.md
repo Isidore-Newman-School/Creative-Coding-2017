@@ -50,9 +50,11 @@ function draw() {
 }
 
 function bounceEllipse() {
-  // some code here
-
+  
   x += speed * direction;
+  
+   // some code here
+  
   ellipse(x, width/2, 50, 50);
 }
 
