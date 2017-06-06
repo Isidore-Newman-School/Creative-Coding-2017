@@ -1,4 +1,4 @@
-#Project 2: Data Visualization
+# Project 2: Data Visualization
 
 [Data visualization](https://docs.google.com/presentation/d/1H66LBXGPAt5Xk4jbGseGBHVbbbaJx7Y0apG3ZfqO3dA/edit?usp=sharing) is one component of [Data Science](https://en.wikipedia.org/wiki/Data_science), a burgeoning field in computer science thanks in large part to the rise of [Big Data](https://en.wikipedia.org/wiki/Big_data)- a term referring to the rapid increase of data availability and collection. Graphically displaying information helps to communicate ideas, illuminate trends, and facilitate data analysis, which is why data visualization has applications to almost any imaginable discipline.
 
