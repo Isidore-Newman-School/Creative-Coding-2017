@@ -125,7 +125,7 @@ function draw() {
 function drawRainbowGradient() {
   for (var i = 0; i < width; i++) {
      stroke(i, width, width);
-     line(i, 0, i, height)
+     line(i, 0, i, height);
   }
 }
 ```
